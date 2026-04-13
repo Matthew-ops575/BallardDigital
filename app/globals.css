@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+  /* Slate + Sage palette */
+  --background: #fafaf8;
+  --foreground: #2c3330;
+  --accent: #6b7f5e;
+  --accent-light: #7d9470;
+  --accent-dark: #556b49;
+  --accent-subtle: #f4f6f0;
+  --surface: #ffffff;
+  --surface-alt: #f3f4f0;
+  --muted: #6b7264;
+  --border: #e0e2db;
+  --success: #6b7f5e;
+  --ridge: #8b7355;
+  --ridge-light: #a08868;
+  --ridge-dark: #755f44;
+  --sand: #c4b59a;
+  --sand-light: #d4c8b0;
+  --slate-brand: #2a3540;
+  --hero-fg: #f1f0ec;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-success: var(--success);
+  --color-ridge: var(--ridge);
+  --color-ridge-light: var(--ridge-light);
+  --color-ridge-dark: var(--ridge-dark);
+  --color-sand: var(--sand);
+  --color-sand-light: var(--sand-light);
+  --color-slate-brand: var(--slate-brand);
+  --color-hero-fg: var(--hero-fg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #8ba67e 0%, #b5c9a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Warm CTA shadow */
+.glow-ridge {
+  box-shadow: 0 4px 14px rgba(139, 115, 85, 0.2);
+}
+
+.glow-ridge:hover {
+  box-shadow: 0 6px 20px rgba(139, 115, 85, 0.3);
+}
+
+/* Hero gradient background */
+.hero-gradient {
+  background: linear-gradient(135deg, #2a3540 0%, #344a3f 50%, #2f3d36 100%);
+}
+
+/* Subtle texture for hero */
+.hero-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(107,127,94,0.1) 0%, transparent 60%),
+              radial-gradient(circle at 70% 60%, rgba(139,115,85,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Mobile nav :target toggle */
+#mobile-nav:target {
+  display: flex !important;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Pulse ring for CTA */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 2px solid rgba(139, 115, 85, 0.4);
+  animation: pulse-ring 2.5s ease-out infinite;
+}
+
+/* Divider accent line */
+.accent-line {
+  width: 24px;
+  height: 2px;
+  background: var(--ridge);
+  display: inline-block;
+}

@@ -1,0 +1,108 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
+import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import { InnerNavbar, InnerFooter } from "@/lib/components";
+
+interface Props {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+  if (!post) return {};
+  return {
+    title: `${post.title} | Ballard Digital Blog`,
+    description: post.description,
+  };
+}
+
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+  if (!post) notFound();
+
+  // Simple markdown → HTML (headings, bold, italic, links, lists, paragraphs)
+  const html = post.content
+    .replace(/^### (.+)$/gm, '<h3 class="mt-8 mb-3 text-xl font-semibold text-foreground">$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2 class="mt-10 mb-4 text-2xl font-bold text-foreground">$1</h2>')
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.+?)\*/g, "<em>$1</em>")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-ridge underline hover:text-ridge-dark">$1</a>')
+    .replace(/^- (.+)$/gm, '<li class="flex items-start gap-2 text-muted"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span><span>$1</span></li>')
+    .replace(/((?:<li[^>]*>.*<\/li>\n?)+)/g, '<ul class="my-4 space-y-2">$1</ul>')
+    .replace(/^(?!<[hula])((?!<).+)$/gm, '<p class="mb-4 leading-relaxed text-muted">$1</p>')
+    .replace(/<p class="mb-4 leading-relaxed text-muted"><\/p>/g, "");
+
+  return (
+    <>
+      <InnerNavbar />
+      <main className="pt-24 pb-20">
+        <article className="mx-auto max-w-3xl px-6">
+          {/* Back link */}
+          <div className="mb-8 pt-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-foreground"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Back to Blog
+            </Link>
+          </div>
+
+          {/* Header */}
+          <header className="mb-10">
+            <div className="mb-4 flex flex-wrap items-center gap-3">
+              <span className="rounded-full border border-accent/20 bg-accent-subtle px-3 py-0.5 text-[11px] font-semibold text-accent-dark">
+                {post.categoryLabel}
+              </span>
+              <span className="text-sm text-muted">{post.date}</span>
+              <span className="flex items-center gap-1 text-sm text-muted">
+                <Clock className="h-3.5 w-3.5" />
+                {post.readTime}
+              </span>
+            </div>
+            <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              {post.title}
+            </h1>
+            <p className="text-lg leading-relaxed text-muted">
+              {post.description}
+            </p>
+          </header>
+
+          {/* Content */}
+          <div
+            className="prose-ballard"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+
+          {/* CTA */}
+          <div className="mt-16 rounded-2xl border border-border bg-accent-subtle p-8 text-center">
+            <h3 className="mb-2 text-xl font-semibold text-foreground">
+              Want to see where your business stands?
+            </h3>
+            <p className="mb-6 text-sm text-muted">
+              Get a free AI visibility check — see what happens when someone
+              asks ChatGPT for a recommendation in your industry.
+            </p>
+            <Link
+              href="/#audit"
+              className="inline-flex items-center gap-2 rounded-xl bg-ridge px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
+            >
+              Run My Free AI Check
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </article>
+      </main>
+      <InnerFooter />
+    </>
+  );
+}
