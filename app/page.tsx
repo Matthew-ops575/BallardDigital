@@ -44,7 +44,6 @@ function Navbar() {
         </a>
         <div className="hidden items-center gap-8 md:flex">
           <a href="#how-it-works" className="text-sm text-muted transition-colors hover:text-foreground">How It Works</a>
-          <a href="#geo" className="text-sm text-muted transition-colors hover:text-foreground">What is GEO?</a>
           <a href="#pricing" className="text-sm text-muted transition-colors hover:text-foreground">Pricing</a>
           <a href="/blog" className="text-sm text-muted transition-colors hover:text-foreground">Blog</a>
           <a href="/about" className="text-sm text-muted transition-colors hover:text-foreground">About</a>
@@ -64,7 +63,6 @@ function Navbar() {
       {/* Mobile nav panel */}
       <div id="mobile-nav" className="hidden target:flex flex-col gap-4 border-t border-border bg-surface px-6 py-6 md:hidden">
         <a href="#how-it-works" className="text-sm text-muted">How It Works</a>
-        <a href="#geo" className="text-sm text-muted">What is GEO?</a>
         <a href="#pricing" className="text-sm text-muted">Pricing</a>
         <a href="/blog" className="text-sm text-muted">Blog</a>
         <a href="/about" className="text-sm text-muted">About</a>
