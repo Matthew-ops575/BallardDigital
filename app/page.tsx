@@ -84,7 +84,7 @@ function Hero() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-sand-light">
             <Sparkles className="h-4 w-4" />
-            Utah&apos;s first SEO practice built for AI search
+            Local SEO consulting backed by results you can verify
           </div>
 
           <h1 className="mb-6 text-4xl leading-tight font-bold tracking-tight text-hero-fg md:text-6xl md:leading-[1.1]">
@@ -737,7 +737,7 @@ function WhyBallardSection() {
     {
       icon: Bot,
       title: "First-mover in AI search",
-      description: "The only Utah practice with productized GEO services. Your competitors will catch up eventually — by then, you'll already own the space.",
+      description: "We pair GEO with live proof — TheWasatchGuide.com ranks content about your market right now. Other agencies have service pages. We have Search Console data.",
     },
     {
       icon: Eye,

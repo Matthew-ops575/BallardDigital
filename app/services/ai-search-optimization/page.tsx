@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title:
     "Generative Engine Optimization (GEO) | AI Search Optimization | Ballard Digital",
   description:
-    "Utah's first SEO practice offering Generative Engine Optimization as a core service. Get found in ChatGPT, Perplexity, and Google AI Overviews — not just blue links.",
+    "AI search optimization backed by live proof. Get found in ChatGPT, Perplexity, and Google AI Overviews — not just blue links.",
   keywords:
     "generative engine optimization, GEO, ai search optimization, ai seo utah, how to rank in chatgpt, ai search optimization salt lake city",
 };

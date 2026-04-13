@@ -79,7 +79,7 @@ export default function HomeServicesSeoPage() {
         },
         {
           q: "What's the difference between your SEO and what the big agencies offer?",
-          a: "Most agencies sell generic SEO packages, lock you into long contracts, and hand your account to a junior after the sale. We're a consulting practice — the person who does the audit does the work. We also offer GEO (AI search optimization) that no other Utah home services SEO provider delivers, backed by TheWasatchGuide.com as live proof that our content actually ranks.",
+          a: "Most agencies sell generic SEO packages, lock you into long contracts, and hand your account to a junior after the sale. We're a consulting practice — the person who does the audit does the work. We also offer GEO (AI search optimization) backed by TheWasatchGuide.com — a live content property with real Google rankings you can verify yourself.",
         },
         {
           q: "Do you require a long-term contract?",

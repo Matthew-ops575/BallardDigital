@@ -29,8 +29,26 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  // Simple markdown → HTML (headings, bold, italic, links, lists, paragraphs)
-  const html = post.content
+  // Simple markdown → HTML (headings, bold, italic, links, lists, tables, paragraphs)
+  function parseMarkdownTables(md: string): string {
+    return md.replace(
+      /(^\|.+\|$\n)(^\|[\s:|-]+\|$\n)((?:^\|.+\|$\n?)+)/gm,
+      (_match, headerRow: string, _separator: string, bodyRows: string) => {
+        const headers = headerRow.trim().split("|").filter((c: string) => c.trim()).map((c: string) => c.trim());
+        const rows = bodyRows.trim().split("\n").map((row: string) =>
+          row.split("|").filter((c: string) => c.trim()).map((c: string) => c.trim())
+        );
+        const ths = headers.map((h: string) => `<th class="px-4 py-3 text-left text-sm font-semibold text-foreground">${h}</th>`).join("");
+        const trs = rows.map((cols: string[]) => {
+          const tds = cols.map((c: string) => `<td class="px-4 py-3 text-sm text-muted">${c}</td>`).join("");
+          return `<tr class="border-t border-border">${tds}</tr>`;
+        }).join("");
+        return `<div class="my-6 overflow-x-auto rounded-xl border border-border"><table class="w-full"><thead class="bg-accent-subtle"><tr>${ths}</tr></thead><tbody>${trs}</tbody></table></div>\n`;
+      }
+    );
+  }
+
+  const html = parseMarkdownTables(post.content)
     .replace(/^### (.+)$/gm, '<h3 class="mt-8 mb-3 text-xl font-semibold text-foreground">$1</h3>')
     .replace(/^## (.+)$/gm, '<h2 class="mt-10 mb-4 text-2xl font-bold text-foreground">$1</h2>')
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
@@ -38,7 +56,7 @@ export default async function BlogPostPage({ params }: Props) {
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-ridge underline hover:text-ridge-dark">$1</a>')
     .replace(/^- (.+)$/gm, '<li class="flex items-start gap-2 text-muted"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span><span>$1</span></li>')
     .replace(/((?:<li[^>]*>.*<\/li>\n?)+)/g, '<ul class="my-4 space-y-2">$1</ul>')
-    .replace(/^(?!<[hula])((?!<).+)$/gm, '<p class="mb-4 leading-relaxed text-muted">$1</p>')
+    .replace(/^(?!<[hdula])((?!<).+)$/gm, '<p class="mb-4 leading-relaxed text-muted">$1</p>')
     .replace(/<p class="mb-4 leading-relaxed text-muted"><\/p>/g, "");
 
   return (

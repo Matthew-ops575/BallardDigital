@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ballard Digital | Utah SEO for the AI Search Era",
     description:
-      "The only Utah SEO agency built for AI-powered search. Get found on Google AND in AI answers.",
+      "Utah SEO consulting backed by live proof. Get found on Google AND in AI answers.",
     type: "website",
     locale: "en_US",
   },
