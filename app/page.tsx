@@ -51,7 +51,7 @@ function Navbar() {
             href="#audit"
             className="inline-flex items-center gap-2 rounded-lg bg-ridge px-4 py-2 text-sm font-medium text-white transition-all hover:bg-ridge-dark glow-ridge"
           >
-            Free AI Check
+            Free Score
             <ArrowRight className="h-4 w-4" />
           </a>
         </div>
@@ -67,7 +67,7 @@ function Navbar() {
         <a href="/blog" className="text-sm text-muted">Blog</a>
         <a href="/about" className="text-sm text-muted">About</a>
         <a href="#audit" className="inline-flex items-center justify-center gap-2 rounded-lg bg-ridge px-4 py-2.5 text-sm font-medium text-white">
-          Free AI Check <ArrowRight className="h-4 w-4" />
+          Free Score <ArrowRight className="h-4 w-4" />
         </a>
       </div>
     </nav>
@@ -105,7 +105,7 @@ function Hero() {
               href="#audit"
               className="pulse-ring relative inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
             >
-              See If You Show Up in AI Search
+              Get Your Free Presence Score
               <ArrowRight className="h-5 w-5" />
             </a>
             <a
@@ -401,7 +401,7 @@ function GeoSection() {
 
         <div className="mt-12 text-center">
           <a href="#audit" className="inline-flex items-center gap-2 text-ridge transition-colors hover:text-ridge-dark">
-            See if your business shows up in AI search <ArrowRight className="h-4 w-4" />
+            Get your free digital presence score <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </div>
@@ -797,7 +797,7 @@ function WhyBallardSection() {
 }
 
 /* ───────────────────────────────────────────
-   AUDIT SECTION — refined CTA for free mini check + paid audit
+   AUDIT SECTION — Digital Presence Score for all buyer segments
    ─────────────────────────────────────────── */
 function AuditSection() {
   return (
@@ -812,20 +812,21 @@ function AuditSection() {
                   <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">Start here</span>
                 </div>
                 <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                  Do you show up in AI search?
+                  How visible is your business online?
                 </h2>
                 <p className="mb-6 leading-relaxed text-muted">
-                  We&apos;ll run a free AI visibility check — what happens when someone asks ChatGPT or Perplexity for a recommendation in your industry and market. Most businesses are shocked by the gap.
+                  We&apos;ll score your digital presence across five dimensions — Google search, Google Business Profile, directories and citations, reviews, and AI search visibility. You&apos;ll see exactly where you stand, where the gaps are, and what to fix first.
                 </p>
                 <p className="mb-6 leading-relaxed text-muted">
-                  If the results warrant it, we&apos;ll follow up with a full scored audit ($500, credited toward your project) covering Google, directories, reviews, website, and AI search with a specific action plan.
+                  If the score reveals meaningful opportunities, we&apos;ll follow up with a full competitive audit ($500, credited toward your project) with a specific action plan and ROI projection.
                 </p>
                 <ul className="space-y-3 text-sm">
                   {[
-                    "Free AI visibility check — see where you stand in minutes",
-                    "Full scored audit with ROI projection — $500 (credited)",
-                    "Competitive comparison against local competitors",
-                    "Specific findings, not generic recommendations",
+                    "Google search & Local Pack visibility",
+                    "Google Business Profile health check",
+                    "Directory & citation consistency",
+                    "Review profile analysis",
+                    "AI search check — do ChatGPT and Perplexity recommend you?",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3">
                       <CheckCircle2 className="h-4 w-4 text-accent" />
@@ -863,7 +864,7 @@ function AuditSection() {
                     </select>
                   </div>
                   <button type="submit" className="w-full rounded-xl bg-ridge py-3.5 text-sm font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge">
-                    Run My Free AI Visibility Check
+                    Get My Free Presence Score
                   </button>
                   <p className="text-center text-xs text-muted">
                     No spam. No obligation. Just a clear picture of where you stand.
@@ -913,7 +914,7 @@ function Footer() {
           <div>
             <h4 className="mb-4 text-sm font-semibold text-white/60">Company</h4>
             <ul className="space-y-2 text-sm text-white/35">
-              <li><a href="#audit" className="transition-colors hover:text-white/60">Free AI Check</a></li>
+              <li><a href="#audit" className="transition-colors hover:text-white/60">Free Score</a></li>
               <li><a href="/blog" className="transition-colors hover:text-white/60">Blog</a></li>
               <li><a href="/about" className="transition-colors hover:text-white/60">About</a></li>
             </ul>

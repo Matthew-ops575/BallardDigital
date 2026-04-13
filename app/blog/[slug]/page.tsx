@@ -89,14 +89,13 @@ export default async function BlogPostPage({ params }: Props) {
               Want to see where your business stands?
             </h3>
             <p className="mb-6 text-sm text-muted">
-              Get a free AI visibility check — see what happens when someone
-              asks ChatGPT for a recommendation in your industry.
+              Get a free digital presence score — see how visible your business is across Google, directories, reviews, and AI search.
             </p>
             <Link
               href="/#audit"
               className="inline-flex items-center gap-2 rounded-xl bg-ridge px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
             >
-              Run My Free AI Check
+              Get My Free Presence Score
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

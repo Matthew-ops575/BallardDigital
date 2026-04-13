@@ -23,7 +23,7 @@ export function InnerNavbar() {
             href="/#audit"
             className="inline-flex items-center gap-2 rounded-lg bg-ridge px-4 py-2 text-sm font-medium text-white transition-all hover:bg-ridge-dark glow-ridge"
           >
-            Free AI Check
+            Free Score
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
@@ -38,7 +38,7 @@ export function InnerNavbar() {
         <Link href="/blog" className="text-sm text-muted">Blog</Link>
         <Link href="/about" className="text-sm text-muted">About</Link>
         <Link href="/#audit" className="inline-flex items-center justify-center gap-2 rounded-lg bg-ridge px-4 py-2.5 text-sm font-medium text-white">
-          Free AI Check <ArrowRight className="h-4 w-4" />
+          Free Score <ArrowRight className="h-4 w-4" />
         </Link>
       </div>
     </nav>
@@ -79,7 +79,7 @@ export function InnerFooter() {
             <ul className="space-y-2 text-sm text-white/35">
               <li><Link href="/blog" className="transition-colors hover:text-white/60">Blog</Link></li>
               <li><Link href="/about" className="transition-colors hover:text-white/60">About</Link></li>
-              <li><Link href="/#audit" className="transition-colors hover:text-white/60">Free AI Check</Link></li>
+              <li><Link href="/#audit" className="transition-colors hover:text-white/60">Free Score</Link></li>
             </ul>
           </div>
         </div>

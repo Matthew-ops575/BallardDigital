@@ -91,7 +91,7 @@ export default function AiSearchOptimizationPage() {
               href="/#audit"
               className="inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
             >
-              Check If AI Recommends Your Business
+              Get Your Free Presence Score
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
@@ -405,18 +405,16 @@ export default function AiSearchOptimizationPage() {
         <section className="bg-background px-6 py-16">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-2xl font-bold tracking-tight text-foreground">
-              Does AI recommend your business?
+              How visible is your business — on Google and in AI?
             </h2>
             <p className="mb-8 text-muted">
-              We&apos;ll run a free AI visibility check right now — see what
-              happens when someone asks ChatGPT for a recommendation in your
-              industry and market.
+              We&apos;ll score your presence across Google search, directories, reviews, and AI search engines — so you can see exactly where the gaps are.
             </p>
             <Link
               href="/#audit"
               className="inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
             >
-              Run My Free AI Visibility Check
+              Get My Free Presence Score
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>

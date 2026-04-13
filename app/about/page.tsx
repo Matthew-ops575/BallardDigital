@@ -244,15 +244,15 @@ export default function AboutPage() {
               See where your business stands
             </h2>
             <p className="mb-8 text-muted">
-              We&apos;ll run a free AI visibility check and show you exactly
-              what happens when someone asks ChatGPT for a recommendation in
-              your industry and market.
+              We&apos;ll score your digital presence across Google search,
+              Google Business Profile, directories, reviews, and AI search
+              — so you can see exactly where you stand and what to fix first.
             </p>
             <Link
               href="/#audit"
               className="inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
             >
-              Get Your Free AI Visibility Check
+              Get Your Free Presence Score
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>

@@ -68,7 +68,7 @@ export function IndustryPage({
               href="/#audit"
               className="inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
             >
-              Get Your Free AI Visibility Check
+              Get Your Free Presence Score
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
@@ -269,7 +269,7 @@ export function IndustryPage({
                 href="/#audit"
                 className="inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
               >
-                Run My Free AI Visibility Check
+                Get My Free Presence Score
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </div>
