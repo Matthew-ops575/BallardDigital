@@ -71,7 +71,7 @@ export function InnerFooter() {
               <li><Link href="/#how-it-works" className="transition-colors hover:text-white/60">How It Works</Link></li>
               <li><Link href="/#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</Link></li>
               <li><Link href="/#pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
-              <li><a href="https://thewasatchguide.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white/60">TheWasatchGuide.com</a></li>
+              <li><Link href="/industries/home-services-seo" className="transition-colors hover:text-white/60">Home Services SEO</Link></li>
             </ul>
           </div>
           <div>

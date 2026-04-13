@@ -909,7 +909,7 @@ function Footer() {
               <li><a href="#how-it-works" className="transition-colors hover:text-white/60">How It Works</a></li>
               <li><a href="#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</a></li>
               <li><a href="#pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
-              <li><a href="https://thewasatchguide.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white/60">TheWasatchGuide.com</a></li>
+              <li><a href="/industries/home-services-seo" className="transition-colors hover:text-white/60">Home Services SEO</a></li>
             </ul>
           </div>
           <div>
