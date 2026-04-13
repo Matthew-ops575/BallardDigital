@@ -43,10 +43,11 @@ function Navbar() {
           </span>
         </a>
         <div className="hidden items-center gap-8 md:flex">
-          <a href="#problem" className="text-sm text-muted transition-colors hover:text-foreground">The Problem</a>
           <a href="#how-it-works" className="text-sm text-muted transition-colors hover:text-foreground">How It Works</a>
           <a href="#geo" className="text-sm text-muted transition-colors hover:text-foreground">What is GEO?</a>
           <a href="#pricing" className="text-sm text-muted transition-colors hover:text-foreground">Pricing</a>
+          <a href="/blog" className="text-sm text-muted transition-colors hover:text-foreground">Blog</a>
+          <a href="/about" className="text-sm text-muted transition-colors hover:text-foreground">About</a>
           <a
             href="#audit"
             className="inline-flex items-center gap-2 rounded-lg bg-ridge px-4 py-2 text-sm font-medium text-white transition-all hover:bg-ridge-dark glow-ridge"
@@ -62,10 +63,11 @@ function Navbar() {
       </div>
       {/* Mobile nav panel */}
       <div id="mobile-nav" className="hidden target:flex flex-col gap-4 border-t border-border bg-surface px-6 py-6 md:hidden">
-        <a href="#problem" className="text-sm text-muted">The Problem</a>
         <a href="#how-it-works" className="text-sm text-muted">How It Works</a>
         <a href="#geo" className="text-sm text-muted">What is GEO?</a>
         <a href="#pricing" className="text-sm text-muted">Pricing</a>
+        <a href="/blog" className="text-sm text-muted">Blog</a>
+        <a href="/about" className="text-sm text-muted">About</a>
         <a href="#audit" className="inline-flex items-center justify-center gap-2 rounded-lg bg-ridge px-4 py-2.5 text-sm font-medium text-white">
           Free AI Check <ArrowRight className="h-4 w-4" />
         </a>
@@ -914,8 +916,8 @@ function Footer() {
             <h4 className="mb-4 text-sm font-semibold text-white/60">Company</h4>
             <ul className="space-y-2 text-sm text-white/35">
               <li><a href="#audit" className="transition-colors hover:text-white/60">Free AI Check</a></li>
-              <li><a href="#" className="transition-colors hover:text-white/60">Blog</a></li>
-              <li><a href="#" className="transition-colors hover:text-white/60">About</a></li>
+              <li><a href="/blog" className="transition-colors hover:text-white/60">Blog</a></li>
+              <li><a href="/about" className="transition-colors hover:text-white/60">About</a></li>
             </ul>
           </div>
         </div>
