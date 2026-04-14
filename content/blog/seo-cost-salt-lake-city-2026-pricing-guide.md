@@ -3,6 +3,12 @@ title: "The Real Cost of SEO in Salt Lake City: 2026 Pricing Guide"
 description: "What does SEO actually cost in Utah? We break down market rates, pricing models, and what separates a $500/month retainer from a $5,000 one."
 date: "2026-04-13"
 category: "guide"
+takeaways:
+  - "Monthly SEO retainers in Utah range from $1,000-$5,000/month depending on scope, competition, and whether AI search optimization is included"
+  - "Project-based SEO work (audits, website builds) typically runs $500-$6,000 in the SLC market"
+  - "The ROI question matters more than the cost question — one new customer from improved visibility often covers months of investment"
+  - "Red flags: agencies that won't publish pricing, require 12-month contracts, or report on rankings instead of leads"
+  - "GEO (AI search optimization) is an emerging cost category — expect $2,000-$4,000/month for combined traditional + AI search services"
 ---
 
 ## You Googled "how much does SEO cost" and got 50 different answers
@@ -114,4 +120,31 @@ But the timeline matters. SEO typically takes 3-6 months to show meaningful resu
 
 We publish our pricing because we believe you shouldn't need a sales call to know whether a service fits your budget. You can see our current rates on our [pricing page](/pricing).
 
-If you're not sure what level of SEO investment makes sense for your business, start with a free audit. We'll show you where you stand in both traditional and AI search results, and give you a straight answer about what it would take to improve. [Request your free audit here](/#audit).
+If you're not sure what level of SEO investment makes sense for your business, start with a [free presence score](/#audit). We'll show you where you stand in both traditional and AI search results, and give you a straight answer about what it would take to improve.
+
+**Related reading:**
+- [What is Generative Engine Optimization?](/blog/what-is-generative-engine-optimization)
+- [Local SEO for HVAC Companies in Utah](/blog/hvac-seo-utah-complete-guide)
+- [How It Works — Our Phased Approach](/#how-it-works)
+
+## FAQ
+
+### How much does SEO cost per month in Salt Lake City?
+
+Monthly SEO retainers in the Salt Lake City market typically range from $1,000-$5,000 per month depending on scope, competition level, and whether AI search optimization (GEO) is included. Single-location service businesses (HVAC, dental, legal) usually invest $1,500-$2,500 per month. Multi-location businesses or highly competitive markets may require $3,000-$5,000.
+
+### Is cheap SEO worth it?
+
+SEO under $500/month is almost always a waste of money. At that price point, there isn't enough budget to produce meaningful content, build real authority, or provide strategic oversight. You'll get templated work and generic reporting. The result is typically no measurable improvement after 6-12 months, and you'll end up spending more to hire someone who does it properly.
+
+### How long does it take for SEO to generate ROI?
+
+Most businesses see measurable improvements in search visibility within 60-90 days. Meaningful lead generation from SEO typically takes 4-6 months. The ROI inflection point — where the value of leads generated consistently exceeds the monthly investment — usually occurs between months 6-12, depending on industry and competition.
+
+### Should I do SEO or Google Ads?
+
+Both serve different purposes. Google Ads generates immediate visibility but stops the moment you stop paying. SEO builds assets you own — content that ranks for years, review profiles that compound, authority that grows. Most businesses benefit from starting with SEO as the foundation and adding Google Ads for immediate visibility while organic rankings build.
+
+### What's the difference between local SEO and regular SEO?
+
+Local SEO focuses on appearing in Google's Local Pack (the map results), Google Business Profile optimization, local directory citations, and geographic-specific content. Regular (or "organic") SEO focuses on ranking your website pages in the traditional search results. For businesses serving a local area — HVAC companies, dental practices, law firms, real estate agents — local SEO is the higher priority.

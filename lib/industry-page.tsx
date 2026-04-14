@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaqSchema } from "@/lib/components";
 import {
   CheckCircle2,
   ArrowRight,

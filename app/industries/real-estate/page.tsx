@@ -4,7 +4,7 @@ import { IndustryPage } from "@/lib/industry-page";
 export const metadata: Metadata = {
   title: "Real Estate SEO in Utah",
   description:
-    "Local SEO and AI search optimization for Utah real estate agents. Neighborhood-level content that puts you in front of buyers and sellers actively searching your market.",
+    "SEO for Utah real estate agents. One closing covers a full year of SEO. Get found by buyers and sellers before they hit the portals.",
   keywords:
     "real estate seo utah, realtor marketing salt lake city, real estate marketing utah, real estate lead generation utah",
 };
@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function RealEstateSeoPage() {
   return (
     <IndustryPage
-      badge="Real Estate SEO — Agents, Brokerages, Teams"
-      headline="When someone searches &ldquo;living in Draper&rdquo; or &ldquo;best neighborhoods in Sandy,&rdquo; does your name come up?"
-      subhead="We help Utah real estate agents build the neighborhood-level content authority that puts you in front of buyers and sellers before they ever contact a portal."
-      roiStat="One additional closing covers 12+ months of retainer."
-      roiExplanation="The average Utah agent commission on a single transaction runs $8,000-$15,000. One additional closing from improved search visibility pays for an entire year of retainer — multiple times over. Every deal after that is pure upside."
+      badge="Real Estate — Agents, Brokerages, Teams"
+      headline="Get found before the portals do."
+      subhead="The average agent commission in Utah is $11,000+. One additional closing from search visibility pays for an entire year of SEO."
+      roiStat="One closing covers 12+ months of retainer."
+      roiExplanation="The average buyer's agent commission is 2.75% — on a $400,000 Utah home, that's $11,000. One additional closing from improved search visibility pays for the entire year. Meanwhile, agents paying $20-$100 per lead from portals are renting their pipeline. SEO builds one you own."
       painPoints={[
         {
           problem: "You're losing leads to Zillow, Realtor.com, and Redfin before prospects even know you exist.",

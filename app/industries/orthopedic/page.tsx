@@ -4,7 +4,7 @@ import { IndustryPage } from "@/lib/industry-page";
 export const metadata: Metadata = {
   title: "Orthopedic SEO in Utah",
   description:
-    "Local SEO and AI search optimization for orthopedic clinics, sports medicine practices, and physical therapy offices in Utah. Patients search by condition and location — we make sure they find you.",
+    "SEO for Utah orthopedic clinics and sports medicine practices. Patients search by condition, not by name. One surgical case covers a year of SEO.",
   keywords:
     "orthopedic seo utah, orthopedic surgeon marketing salt lake city, sports medicine seo utah, physical therapy seo, orthopedic clinic marketing utah",
 };
@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function OrthopedicSeoPage() {
   return (
     <IndustryPage
-      badge="Orthopedic SEO — Clinics, Sports Medicine, Physical Therapy"
-      headline="Patients search for specialists by condition, not by name. Are they finding your practice?"
-      subhead="We help Utah orthopedic clinics and sports medicine practices get found by patients searching for specialists — on Google, in AI-powered search, and across every platform patients use to choose a provider."
-      roiStat="One surgical patient covers 12+ months of retainer."
-      roiExplanation="A single orthopedic surgery case — knee replacement, ACL reconstruction, rotator cuff repair — generates $15,000-$50,000+ in revenue. At our retainer rates, one new surgical patient from improved search visibility pays for the entire year. For physical therapy and sports medicine, 3-5 new patients per month from SEO transforms your growth pipeline."
+      badge="Orthopedics — Clinics, Sports Medicine, Physical Therapy"
+      headline="Patients search by condition. Show up."
+      subhead="The average orthopedic case generates $6,400+ in net revenue. Patients searching 'knee pain doctor near me' are choosing from whoever ranks — we make sure that's you."
+      roiStat="One surgical case covers the entire year of SEO."
+      roiExplanation="Orthopedic net revenue averages $6,400 per case, with knee replacements and ACL reconstructions generating $10,000-$20,000+. Patient acquisition costs run $350-$450 through paid channels. SEO drives patient volume at a fraction of that cost — and compounds over time instead of stopping when you stop paying."
       painPoints={[
         {
           problem: "Patients search 'knee pain doctor near me' and your competitors show up first.",

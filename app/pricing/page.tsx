@@ -7,7 +7,7 @@ import {
   Wrench,
   Rocket,
 } from "lucide-react";
-import { InnerNavbar, InnerFooter } from "@/lib/components";
+import { InnerNavbar, InnerFooter, FaqSchema } from "@/lib/components";
 
 export const metadata: Metadata = {
   title: "Pricing | Ballard Digital",
@@ -15,9 +15,33 @@ export const metadata: Metadata = {
     "Transparent SEO pricing for Utah businesses. Audit, build, and grow — every engagement follows the same path. No hidden fees, no long-term lock-in.",
 };
 
+const faqs = [
+  {
+    q: "Are there long-term contracts?",
+    a: "No. After the initial audit and build phases, retainers are month-to-month. We earn retention through results. If we're not delivering, you should leave.",
+  },
+  {
+    q: "What if I only need an audit?",
+    a: "That's fine. The $500 audit is a standalone deliverable — you get a scored report and action plan whether or not you continue with us. If you do continue, the $500 is credited toward your build phase.",
+  },
+  {
+    q: "Do I need the build phase if I already have a website?",
+    a: "Maybe not. If your site is technically sound and well-structured for SEO, we can skip the build and go straight to a retainer. The audit will tell us.",
+  },
+  {
+    q: "What's the difference between Growth and Growth + GEO?",
+    a: "Growth covers traditional local SEO — Google rankings, Google Business Profile, directories, and content. Growth + GEO adds AI search optimization — monitoring and improving your visibility in ChatGPT, Perplexity, and Google AI Overviews. If AI search matters to your market, GEO is worth it.",
+  },
+  {
+    q: "Can I switch tiers?",
+    a: "Yes, anytime. Upgrade or downgrade month to month based on your needs and results.",
+  },
+];
+
 export default function PricingPage() {
   return (
     <>
+      <FaqSchema items={faqs} />
       <InnerNavbar />
       <main className="pt-24 pb-20">
         {/* Header */}
@@ -97,7 +121,7 @@ export default function PricingPage() {
                     "NAP cleanup across 20+ directories",
                     "Google Business Profile optimization",
                     "Entity optimization for AI search",
-                    "Custom WordPress website (5-12 pages)",
+                    "Custom website (5-12 pages)",
                     "Schema markup, lead capture, analytics setup",
                     "Review generation system",
                     "30-day post-launch support + training",
@@ -251,28 +275,7 @@ export default function PricingPage() {
               Pricing FAQ
             </h2>
             <div className="space-y-6">
-              {[
-                {
-                  q: "Are there long-term contracts?",
-                  a: "No. After the initial audit and build phases, retainers are month-to-month. We earn retention through results. If we're not delivering, you should leave.",
-                },
-                {
-                  q: "What if I only need an audit?",
-                  a: "That's fine. The $500 audit is a standalone deliverable — you get a scored report and action plan whether or not you continue with us. If you do continue, the $500 is credited toward your build phase.",
-                },
-                {
-                  q: "Do I need the build phase if I already have a website?",
-                  a: "Maybe not. If your site is technically sound and well-structured for SEO, we can skip the build and go straight to a retainer. The audit will tell us.",
-                },
-                {
-                  q: "What's the difference between Growth and Growth + GEO?",
-                  a: "Growth covers traditional local SEO — Google rankings, Google Business Profile, directories, and content. Growth + GEO adds AI search optimization — monitoring and improving your visibility in ChatGPT, Perplexity, and Google AI Overviews. If AI search matters to your market, GEO is worth it.",
-                },
-                {
-                  q: "Can I switch tiers?",
-                  a: "Yes, anytime. Upgrade or downgrade month to month based on your needs and results.",
-                },
-              ].map((faq) => (
+              {faqs.map((faq) => (
                 <div key={faq.q} className="border-b border-border pb-6">
                   <h3 className="mb-2 text-base font-semibold text-foreground">
                     {faq.q}

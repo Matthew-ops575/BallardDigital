@@ -4,7 +4,7 @@ import { IndustryPage } from "@/lib/industry-page";
 export const metadata: Metadata = {
   title: "HVAC & Home Services SEO in Utah",
   description:
-    "Local SEO and AI search optimization for HVAC, plumbing, electrical, and roofing companies in Utah. One furnace install covers 6-12 months of retainer. Transparent pricing.",
+    "SEO for Utah HVAC, plumbing, and roofing companies. The average residential customer is worth $15,000+ over their lifetime. Show up when they search.",
   keywords:
     "hvac seo utah, plumbing seo utah, roofing seo utah, home services marketing salt lake city, hvac marketing utah",
 };
@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function HomeServicesSeoPage() {
   return (
     <IndustryPage
-      badge="Home Services SEO — HVAC, Plumbing, Electrical, Roofing"
-      headline="Your customers Google &ldquo;furnace repair near me&rdquo; at 2 AM. Do they find you?"
-      subhead="We help Utah home service companies dominate local search and AI-powered recommendations — so the phone rings before your competitor's does."
-      roiStat="One furnace install covers 6-12 months of retainer."
-      roiExplanation="The average HVAC install runs $3,000-$8,000. A single job from improved search visibility more than pays for months of SEO investment. That's not aspirational math — it's verifiable, and we'll show you the projection during your audit."
+      badge="Home Services — HVAC, Plumbing, Electrical, Roofing"
+      headline="Show up when homeowners search."
+      subhead="The average HVAC customer is worth $15,000+ in lifetime revenue. We make sure they call you — not the company that outranks you."
+      roiStat="The average residential customer is worth $15,000+ over time."
+      roiExplanation="Between repairs, maintenance, and eventual system replacement, a single residential HVAC customer generates $15,000+ in lifetime revenue. The average service ticket is $1,200 and climbing. At our retainer rates, one new customer per month from search covers the investment — and every customer after that is profit."
       painPoints={[
         {
           problem: "You're paying for Google Ads but the leads dry up the moment you stop.",
@@ -75,7 +75,7 @@ export default function HomeServicesSeoPage() {
         },
         {
           q: "Do I need a new website?",
-          a: "Not always. Our audit will tell you. If your current site is structurally sound, we optimize what you have. If it needs rebuilding, we include a custom WordPress site in Phase 2 ($2,500-$5,000). You own the domain and everything we build — registered in your name from day one.",
+          a: "Not always. Our audit will tell you. If your current site is structurally sound, we optimize what you have. If it needs rebuilding, we include a custom website in Phase 2 ($3,000-$6,000). You own the domain and everything we build — registered in your name from day one.",
         },
         {
           q: "What's the difference between your SEO and what the big agencies offer?",

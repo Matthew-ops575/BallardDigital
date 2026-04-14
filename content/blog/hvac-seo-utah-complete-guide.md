@@ -3,6 +3,13 @@ title: "Local SEO for HVAC Companies in Utah: The Complete Guide"
 description: "How Utah HVAC companies can dominate local search and get more service calls. Covers Google Business Profile, reviews, content strategy, and AI search optimization."
 date: "2026-04-14"
 category: "industry"
+takeaways:
+  - "HVAC is one of the highest-ROI industries for local SEO — one furnace install ($3,000-$8,000) covers months of investment"
+  - "Your Google Business Profile is the single most important SEO asset — update it weekly with posts, photos, and review responses"
+  - "AC repair searches spike 266% in July; furnace repair spikes 137% in January — publish seasonal content 6-8 weeks ahead"
+  - "Create dedicated service pages for each offering (AC repair, furnace install, heat pump, etc.) — Google can't rank a bullet point list"
+  - "Build city-specific landing pages for every area you serve with unique local content, not just swapped city names"
+  - "AI search is the new frontier — homeowners increasingly ask ChatGPT for HVAC recommendations, and most companies are invisible there"
 ---
 
 ## Your next customer is searching right now. Will they find you or your competitor?
@@ -198,3 +205,30 @@ If you're considering hiring someone to handle SEO, here's what to evaluate:
 - **Do you own everything?** Your domain, content, analytics, and credentials should be in your name from day one.
 
 At Ballard Digital, we specialize in [home services SEO](/industries/home-services) with a specific focus on Utah markets. Every engagement starts with a scored assessment of your current digital presence — including an AI search visibility check that most agencies don't even know how to run. [Get your free presence score](/#audit) to see where your HVAC company stands.
+
+**Related reading:**
+- [How to Rank in ChatGPT: A Practical Guide for Local Businesses](/blog/how-to-rank-in-chatgpt-local-business-guide)
+- [The Real Cost of SEO in Salt Lake City: 2026 Pricing Guide](/blog/seo-cost-salt-lake-city-2026-pricing-guide)
+- [What is Generative Engine Optimization?](/blog/what-is-generative-engine-optimization)
+
+## FAQ
+
+### How much does SEO cost for an HVAC company in Utah?
+
+Monthly retainers for HVAC companies in Utah typically range from $1,000-$2,500 per month depending on competition, service area size, and whether AI search optimization is included. Every engagement at Ballard Digital starts with a $500 scored audit that's credited toward your project. One furnace install from improved visibility pays for 6-12 months of retainer.
+
+### How long does it take for HVAC SEO to work?
+
+Google Business Profile improvements typically show measurable results within 60-90 days. Organic rankings for competitive service keywords (like "AC repair Salt Lake City") take 3-6 months to build. Seasonal content should be published 6-8 weeks before the search peak to rank in time. AI search citation improvements typically develop over 2-4 months.
+
+### Should I do SEO or Google Ads for my HVAC company?
+
+Both have a role. Google Ads (and Local Service Ads) provide immediate visibility — great for filling the schedule during slow periods. SEO builds long-term assets that deliver leads without ongoing ad spend. Most HVAC companies should start with SEO as the foundation and layer in ads for seasonal boosts or immediate needs. The key difference: when you stop paying for ads, the leads stop. SEO content keeps working for years.
+
+### Do I need a new website for HVAC SEO?
+
+Not necessarily. Our audit evaluates your current website's SEO foundation — site speed, mobile responsiveness, content quality, schema markup, and technical health. If the foundation is sound, we optimize what you have. If the site is holding you back, we build a new one on WordPress ($2,500-$5,000) that you own completely with a clean handoff if the relationship ever ends.
+
+### What's the most important thing I can do for HVAC SEO right now?
+
+Optimize your Google Business Profile. It's free, it takes an afternoon, and it directly impacts your Local Pack visibility. Complete every field, add photos weekly, post updates, and respond to every review within 24 hours. This single action will generate more impact than any other SEO tactic in the short term.

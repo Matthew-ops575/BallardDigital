@@ -3,6 +3,13 @@ title: "How to Rank in ChatGPT: A Practical Guide for Local Businesses"
 description: "More customers are asking AI for local business recommendations. Here's how to make sure ChatGPT, Perplexity, and Google AI actually recommend yours."
 date: "2026-04-14"
 category: "geo"
+takeaways:
+  - "AI recommends businesses based on entity consistency, review strength, structured data, content quality, and web authority — not traditional SEO signals like backlinks"
+  - "Consistent NAP (name, address, phone) across all directories is the foundation — inconsistency confuses AI models"
+  - "Reviews matter more for AI recommendations than most businesses realize — volume, recency, and response rate all factor in"
+  - "Adding schema markup (LocalBusiness, Service, FAQ) to your website acts as a structured resume AI can read directly"
+  - "Creating FAQ content with direct answers gives AI something specific to cite when generating recommendations"
+  - "Monitor your AI visibility monthly — ask ChatGPT and Perplexity for recommendations in your market and track changes"
 ---
 
 ## People are asking AI to find you. Are you showing up?
@@ -134,3 +141,30 @@ AI search optimization is where traditional SEO was in 2010 — early enough tha
 Your competitors are probably not doing this yet. That's the opportunity.
 
 At Ballard Digital, we check AI visibility as part of every digital presence assessment. If you want to see where your business stands — in Google and in AI search — [get your free presence score](/#audit). It takes five minutes and the results usually surprise people.
+
+**Related reading:**
+- [What is Generative Engine Optimization? (And Why Utah Businesses Need It Now)](/blog/what-is-generative-engine-optimization)
+- [Local SEO for HVAC Companies in Utah: The Complete Guide](/blog/hvac-seo-utah-complete-guide)
+- [Our AI Search Optimization (GEO) service](/services/ai-search-optimization)
+
+## FAQ
+
+### Can you guarantee my business will appear in ChatGPT?
+
+No — and anyone who guarantees AI placement is not being honest. AI responses are non-deterministic, meaning the same question can produce different answers each time. What we can do is systematically improve the signals that AI uses to make recommendations: entity data, reviews, structured content, and web authority. Over time, this increases citation frequency measurably.
+
+### How often do AI search results change?
+
+AI models update their knowledge continuously through retrieval-augmented generation (pulling from current web data) and periodic training updates. Changes you make to your entity data, reviews, and content can begin influencing AI recommendations within weeks, though the full impact compounds over months.
+
+### Does this work for Perplexity and Google AI Overviews too, or just ChatGPT?
+
+The same principles apply across all AI search platforms. Entity consistency, strong reviews, structured data, and authoritative mentions are universal trust signals. We monitor your visibility across ChatGPT, Perplexity, and Google AI Overviews — each may recommend different businesses, so tracking all three is important.
+
+### What if my business currently has bad or inaccurate information in AI search?
+
+This is common and fixable. Inaccurate AI responses usually stem from inconsistent entity data across the web — different names, addresses, or descriptions on different platforms. The fix is systematic: clean up your NAP across all directories, update structured data on your website, and build consistent mentions on authoritative sources. AI models will correct over time as they ingest updated information.
+
+### How much does AI search optimization cost?
+
+Our Growth + GEO retainer, which includes both traditional local SEO and AI search optimization, runs $2,000-$2,500 per month. AI search monitoring and entity optimization are also included in our $500 digital presence audit. See our [pricing page](/pricing) for full details.

@@ -6,6 +6,8 @@ import {
   MapPin,
   Code,
   Palette,
+  FileText,
+  Star,
 } from "lucide-react";
 import { InnerNavbar, InnerFooter } from "@/lib/components";
 
@@ -19,18 +21,39 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    icon: Bot,
-    name: "AI Search Optimization (GEO)",
-    slug: "ai-search-optimization",
+    icon: Palette,
+    name: "Web Design",
+    slug: "web-design",
     description:
-      "Get found in ChatGPT, Perplexity, and Google AI Overviews — not just traditional blue links. Our flagship service and the biggest differentiator we offer.",
+      "Custom websites built for search — fast, mobile-first, with schema markup and lead capture from day one.",
   },
   {
     icon: MapPin,
     name: "Local SEO",
     slug: "local-seo",
     description:
-      "Google Business Profile optimization, directory management, review strategy, and content that drives local customers to your door.",
+      "The full strategy — directory citations, on-page optimization, review management, local content, and the technical signals that determine who ranks in your market.",
+  },
+  {
+    icon: Bot,
+    name: "AI Search Optimization (GEO)",
+    slug: "ai-search-optimization",
+    description:
+      "Get found in ChatGPT, Perplexity, and Google AI Overviews — not just traditional blue links.",
+  },
+  {
+    icon: Star,
+    name: "Google Business Profile",
+    slug: "google-business-profile",
+    description:
+      "Your most important local asset — optimized, managed, and updated weekly so you show up in the Local Pack.",
+  },
+  {
+    icon: FileText,
+    name: "Content Marketing",
+    slug: "content-marketing",
+    description:
+      "Blog posts, service pages, and local content built around what your customers actually search — designed to rank and convert.",
   },
   {
     icon: Code,
@@ -38,13 +61,6 @@ const services = [
     slug: "technical-seo",
     description:
       "Site speed, crawlability, schema markup, Core Web Vitals, and the technical foundation your rankings depend on.",
-  },
-  {
-    icon: Palette,
-    name: "SEO Web Design",
-    slug: "web-design",
-    description:
-      "Custom WordPress websites built for search — fast, mobile-first, with schema markup and lead capture from day one.",
   },
 ];
 

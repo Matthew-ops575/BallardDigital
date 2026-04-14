@@ -70,6 +70,8 @@ export function InnerFooter() {
             <ul className="space-y-2 text-sm text-white/35">
               <li><Link href="/services/ai-search-optimization" className="transition-colors hover:text-white/60">AI Search Optimization</Link></li>
               <li><Link href="/services/local-seo" className="transition-colors hover:text-white/60">Local SEO</Link></li>
+              <li><Link href="/services/google-business-profile" className="transition-colors hover:text-white/60">Google Business Profile</Link></li>
+              <li><Link href="/services/content-marketing" className="transition-colors hover:text-white/60">Content Marketing</Link></li>
               <li><Link href="/services/technical-seo" className="transition-colors hover:text-white/60">Technical SEO</Link></li>
               <li><Link href="/services/web-design" className="transition-colors hover:text-white/60">Web Design</Link></li>
               <li><Link href="/pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
@@ -115,5 +117,27 @@ export function BackLink({ href, label }: { href: string; label: string }) {
       <ArrowLeft className="h-4 w-4" />
       {label}
     </Link>
+  );
+}
+
+export function FaqSchema({ items }: { items: { q: string; a: string }[] }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }

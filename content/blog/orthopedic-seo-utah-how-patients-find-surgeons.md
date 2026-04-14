@@ -3,6 +3,13 @@ title: "How Utah Orthopedic Patients Find Their Surgeon Online (And Why Most Pra
 description: "Utah's ski resorts, outdoor recreation, and youth sports create year-round orthopedic demand. Here's how patients actually search for providers — and why most practices miss the call."
 date: "2026-04-14"
 category: "industry"
+takeaways:
+  - "Utah's 15 ski resorts, outdoor recreation culture, and youth sports create year-round orthopedic search demand — 43% of ski injuries require surgery"
+  - "Patients search by condition first ('knee pain after skiing'), then provider — practices without condition-specific content miss the earliest search stage"
+  - "Most orthopedic websites list procedures in bullet points — Google can't rank a bullet. Each procedure needs its own dedicated page"
+  - "Knee replacement searches for ages 45-64 have surged 188% — outpatient and robotic-assisted surgery are driving new search patterns"
+  - "No SEO agency in Utah specializes in orthopedic practices — national agencies don't understand Utah's unique injury patterns and patient demographics"
+  - "AI search is especially relevant for healthcare — patients increasingly ask ChatGPT for provider recommendations, and practices with strong entity data and reviews dominate"
 ---
 
 ## Utah has a unique orthopedic demand problem — and it's a search problem
@@ -150,3 +157,30 @@ No SEO agency in Utah specializes in orthopedic practices. National orthopedic m
 A practice that invests in local SEO and AI search optimization now — while competitors neglect their online presence — builds a compounding advantage. The surgeon who shows up when a patient searches "best knee surgeon in salt lake city" gets the consultation. The surgeon who shows up when ChatGPT is asked the same question gets the trust.
 
 At Ballard Digital, we help [orthopedic practices](/industries/orthopedic) build the search visibility that matches their clinical expertise. If you want to see how your practice appears in Google and AI search, [get your free presence score](/#audit). We'll show you exactly where you stand — and where the patients are going instead.
+
+**Related reading:**
+- [How to Rank in ChatGPT: A Practical Guide for Local Businesses](/blog/how-to-rank-in-chatgpt-local-business-guide)
+- [What is Generative Engine Optimization?](/blog/what-is-generative-engine-optimization)
+- [Our Orthopedic SEO services](/industries/orthopedic)
+
+## FAQ
+
+### How much does SEO cost for an orthopedic practice in Utah?
+
+Monthly retainers for orthopedic practices typically range from $1,500-$3,000 per month depending on competition, number of locations, and whether AI search optimization is included. Multi-location practices or those in highly competitive markets may invest more. Every engagement starts with a $500 scored audit credited toward your project. One surgical patient from improved search visibility covers 12+ months of retainer.
+
+### How do orthopedic patients search differently than other healthcare patients?
+
+Orthopedic patients typically search by condition or body part first ("torn ACL," "knee pain after skiing," "shoulder won't rotate") rather than by provider type. This means practices need condition-specific content to capture patients at the earliest stage of their search. The second stage is provider comparison, where Google reviews, website quality, and AI recommendations determine who gets the call.
+
+### Why doesn't our current SEO agency understand orthopedic marketing?
+
+Most general SEO agencies apply the same playbook across all industries. Orthopedic marketing requires understanding seasonal injury patterns (ski season, youth sports calendars), procedure-specific search behavior, the patient decision timeline (which is longer than emergency services), and Utah's unique outdoor recreation culture. National orthopedic marketing agencies understand the procedures but not the Utah market. A local practice that understands both delivers better results.
+
+### How important are Google reviews for orthopedic practices?
+
+Extremely important. Reviews are the primary trust signal for both Google Local Pack rankings and AI recommendations. For orthopedic practices specifically, patients look at review volume, recency, and whether the surgeon responds to reviews. Patients also look for condition-specific mentions in reviews ("great experience with my ACL reconstruction"). Implementing a systematic review request process at key touchpoints (post-consultation, post-surgery recovery milestones) generates 3-5x more reviews than passive accumulation.
+
+### Should we create separate pages for each procedure?
+
+Yes. Each major procedure your practice performs — total knee replacement, ACL reconstruction, rotator cuff repair, hip replacement, spine surgery — should have its own dedicated page with substantive content. Google can't rank a bullet point on a services page. A dedicated page targeting "ACL reconstruction Salt Lake City" with 800+ words about the procedure, recovery, and your approach can rank for that specific search query and drive qualified patient inquiries.

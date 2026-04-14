@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaqSchema } from "@/lib/components";
 import {
   CheckCircle2,
   ArrowRight,
@@ -55,6 +56,7 @@ export function CityPage({
 }: CityPageProps) {
   return (
     <>
+      <FaqSchema items={faqItems} />
       <InnerNavbar />
       <main className="pt-24 pb-20">
         {/* Hero */}

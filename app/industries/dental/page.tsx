@@ -4,7 +4,7 @@ import { IndustryPage } from "@/lib/industry-page";
 export const metadata: Metadata = {
   title: "Dental SEO in Salt Lake City",
   description:
-    "Local SEO and AI search optimization for dental practices in Utah. 71% of patients use online reviews. One implant patient covers the entire annual investment.",
+    "SEO for Utah dental practices. The average patient is worth $10,000+ over their lifetime. We help you get found by more of them.",
   keywords:
     "dental seo salt lake city, dentist marketing utah, dental practice seo, dental marketing ideas utah",
 };
@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function DentalSeoPage() {
   return (
     <IndustryPage
-      badge="Dental SEO — General, Cosmetic, Implants, Orthodontics"
-      headline="71% of patients read online reviews before choosing a dentist. What do they find when they search for yours?"
-      subhead="We help Utah dental practices get found by new patients — on Google, in AI-powered search, and everywhere patients look before booking an appointment."
-      roiStat="One implant patient covers the entire annual investment."
-      roiExplanation="A single dental implant case is worth $3,000-$5,000 to your practice. At our retainer rates, one new implant patient from improved search visibility pays for the entire year. For general dentistry, 3-5 new patients per month from SEO transforms your growth trajectory."
+      badge="Dental — General, Cosmetic, Implants, Orthodontics"
+      headline="Get more patients from search."
+      subhead="The average dental patient is worth $10,000+ in lifetime revenue. We make sure they find your practice — not your competitor's."
+      roiStat="Each new patient is worth $10,000+ over their lifetime."
+      roiExplanation="Patients stay with a practice 7-10 years, generating $250-$400 per visit. A single implant case alone is worth $3,000-$5,000. At our retainer rates, 2-3 new patients per month from improved search visibility transforms your growth — and pays for the investment many times over."
       painPoints={[
         {
           problem: "You have a great practice but new patient flow is inconsistent.",
@@ -75,7 +75,7 @@ export default function DentalSeoPage() {
         },
         {
           q: "We already have a website. Do we need a new one?",
-          a: "Our audit will tell you. Many dental websites look fine but are technically weak — slow load times, no schema markup, thin service pages, poor mobile experience. If your site is structurally sound, we optimize it. If it's holding you back, we build a new one on WordPress ($3,000-$5,000) that you own completely.",
+          a: "Our audit will tell you. Many dental websites look fine but are technically weak — slow load times, no schema markup, thin service pages, poor mobile experience. If your site is structurally sound, we optimize it. If it's holding you back, we build a new one ($3,000-$6,000) that you own completely.",
         },
         {
           q: "How is this different from dental-specific marketing companies?",

@@ -10,19 +10,39 @@ import {
   Code,
   Shield,
 } from "lucide-react";
-import { InnerNavbar, InnerFooter } from "@/lib/components";
+import { InnerNavbar, InnerFooter, FaqSchema } from "@/lib/components";
 
 export const metadata: Metadata = {
   title: "SEO Web Design in Utah | Ballard Digital",
   description:
-    "Custom websites built for local search. Fast, mobile-first WordPress sites with schema markup, lead capture, and the technical foundation for long-term SEO growth.",
+    "Custom websites built for local search. Fast, mobile-first sites with schema markup, lead capture, and the technical foundation for long-term SEO growth.",
   keywords:
-    "seo web design utah, wordpress seo utah, website design salt lake city, small business website utah",
+    "seo web design utah, website design salt lake city, small business website utah, web design salt lake city",
 };
+
+const faqs = [
+  {
+    q: "Do I need a new website?",
+    a: "Maybe not. Our audit will tell you. If your site is structurally sound but just needs optimization, we work with what you have. We only recommend a new build when the existing site is actively holding back your search visibility.",
+  },
+  {
+    q: "What platform do you build on?",
+    a: "We choose the best platform for your needs — whether that's WordPress, a modern framework, or a managed solution. The key is that you're never locked in. You own everything, and any developer can work on it after us.",
+  },
+  {
+    q: "How long does a website build take?",
+    a: "2-4 weeks from kickoff to launch, depending on the number of pages and content readiness. We handle design, development, and SEO setup. You provide business information and feedback.",
+  },
+  {
+    q: "What about hosting?",
+    a: "We set you up on managed hosting that fits your site. You own the hosting account directly. Typical cost is $15-$30/month, paid to the host — not to us.",
+  },
+];
 
 export default function WebDesignPage() {
   return (
     <>
+      <FaqSchema items={faqs} />
       <InnerNavbar />
       <main className="pt-24 pb-20">
         {/* Hero */}
@@ -132,13 +152,13 @@ export default function WebDesignPage() {
                 <span className="ml-2 text-sm text-muted">one-time</span>
               </div>
               <p className="mb-6 text-sm text-muted">
-                Custom WordPress website, 5-12 pages, built as part of our
+                Custom website, 5-12 pages, built as part of our
                 foundation phase. The $500 audit fee is credited toward the
                 project.
               </p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {[
-                  "Custom WordPress design (not a template)",
+                  "Custom design (not a template)",
                   "5-12 optimized pages",
                   "Schema markup on every page",
                   "Google Analytics + Search Console setup",
@@ -164,24 +184,7 @@ export default function WebDesignPage() {
               Frequently asked questions
             </h2>
             <div className="space-y-6">
-              {[
-                {
-                  q: "Do I need a new website?",
-                  a: "Maybe not. Our audit will tell you. If your site is structurally sound but just needs optimization, we work with what you have. We only recommend a new build when the existing site is actively holding back your search visibility.",
-                },
-                {
-                  q: "Why WordPress?",
-                  a: "WordPress powers 40%+ of the web and has the best ecosystem for local SEO — schema plugins, performance optimization, and flexibility. You're not locked into a proprietary platform, and any developer can work on it after us.",
-                },
-                {
-                  q: "How long does a website build take?",
-                  a: "2-4 weeks from kickoff to launch, depending on the number of pages and content readiness. We handle design, development, and SEO setup. You provide business information and feedback.",
-                },
-                {
-                  q: "What about hosting?",
-                  a: "We set you up on managed WordPress hosting (typically SiteGround or Cloudways). You own the hosting account. Typical cost is $15-$30/month, paid directly to the host.",
-                },
-              ].map((faq) => (
+              {faqs.map((faq) => (
                 <div key={faq.q} className="border-b border-border pb-6">
                   <h3 className="mb-2 text-base font-semibold text-foreground">
                     {faq.q}

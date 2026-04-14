@@ -10,19 +10,39 @@ import {
   Wrench,
   Rocket,
 } from "lucide-react";
-import { InnerNavbar, InnerFooter } from "@/lib/components";
+import { InnerNavbar, InnerFooter, FaqSchema } from "@/lib/components";
 
 export const metadata: Metadata = {
   title: "Local SEO in Utah | Ballard Digital",
   description:
-    "Local SEO services for Utah businesses. Google Business Profile optimization, directory management, review strategy, and content that drives local customers to your door.",
+    "Local SEO services for Utah businesses. Directory citations, on-page optimization, review strategy, and content that drives local customers to your door.",
   keywords:
     "local seo utah, local seo salt lake city, google business profile optimization utah, local search optimization",
 };
 
+const faqs = [
+  {
+    q: "How much does local SEO cost?",
+    a: "Our retainers start at $1,000-$1,500/month for local SEO. Every engagement begins with a $500 scored audit credited toward your project. See our pricing page for full details.",
+  },
+  {
+    q: "How long does local SEO take to work?",
+    a: "Most businesses see movement in 2-4 months for local keywords. Google Business Profile optimizations can show results faster — sometimes within weeks. Full impact typically takes 4-6 months.",
+  },
+  {
+    q: "Do I need a new website for local SEO?",
+    a: "Not always. Our audit will tell you. If your site is technically sound, we optimize it. If it's holding you back, we build a new one as part of the foundation phase.",
+  },
+  {
+    q: "What about AI search?",
+    a: "Local SEO and AI search optimization (GEO) work together. Our Growth + GEO retainer ($2,000-$2,500/mo) combines both. If you're interested in appearing in ChatGPT and Perplexity recommendations alongside Google, that's our most popular tier.",
+  },
+];
+
 export default function LocalSeoPage() {
   return (
     <>
+      <FaqSchema items={faqs} />
       <InnerNavbar />
       <main className="pt-24 pb-20">
         {/* Hero */}
@@ -70,11 +90,14 @@ export default function LocalSeoPage() {
                 City,&quot; local SEO determines whether your business shows up.
               </p>
               <p>
-                It covers your Google Business Profile, local directory
-                listings, review profile, on-page optimization, and the
-                technical signals that tell Google where you are and what you
-                do. Done right, it turns search traffic into phone calls,
-                form submissions, and walk-ins.
+                It covers directory listings, on-page optimization, review
+                strategy, local content, and the technical signals that tell
+                Google where you are and what you do. Paired with{" "}
+                <a href="/services/google-business-profile" className="text-ridge underline hover:text-ridge-dark">
+                  Google Business Profile management
+                </a>
+                , it turns search traffic into phone calls, form submissions,
+                and walk-ins.
               </p>
             </div>
           </div>
@@ -95,16 +118,16 @@ export default function LocalSeoPage() {
             <div className="grid gap-6 sm:grid-cols-2">
               {[
                 {
-                  icon: MapPin,
-                  title: "Google Business Profile",
-                  description:
-                    "Full optimization — categories, attributes, photos, weekly posts, Q&A management, and review responses. Your GBP is your most important local asset.",
-                },
-                {
                   icon: Search,
                   title: "Directory & Citation Management",
                   description:
                     "NAP consistency across 20+ directories. We clean up duplicates, fix incorrect listings, and build citations on the platforms that matter for your industry.",
+                },
+                {
+                  icon: MapPin,
+                  title: "Local Content Strategy",
+                  description:
+                    "Service pages, location pages, and blog content targeting the searches your customers actually make — with Utah-specific context that national content can't match.",
                 },
                 {
                   icon: Star,
@@ -192,24 +215,7 @@ export default function LocalSeoPage() {
               Frequently asked questions
             </h2>
             <div className="space-y-6">
-              {[
-                {
-                  q: "How much does local SEO cost?",
-                  a: "Our retainers start at $1,000-$1,500/month for local SEO. Every engagement begins with a $500 scored audit credited toward your project. See our pricing page for full details.",
-                },
-                {
-                  q: "How long does local SEO take to work?",
-                  a: "Most businesses see movement in 2-4 months for local keywords. Google Business Profile optimizations can show results faster — sometimes within weeks. Full impact typically takes 4-6 months.",
-                },
-                {
-                  q: "Do I need a new website for local SEO?",
-                  a: "Not always. Our audit will tell you. If your site is technically sound, we optimize it. If it's holding you back, we build a new one as part of the foundation phase.",
-                },
-                {
-                  q: "What about AI search?",
-                  a: "Local SEO and AI search optimization (GEO) work together. Our Growth + GEO retainer ($2,000-$2,500/mo) combines both. If you're interested in appearing in ChatGPT and Perplexity recommendations alongside Google, that's our most popular tier.",
-                },
-              ].map((faq) => (
+              {faqs.map((faq) => (
                 <div key={faq.q} className="border-b border-border pb-6">
                   <h3 className="mb-2 text-base font-semibold text-foreground">
                     {faq.q}

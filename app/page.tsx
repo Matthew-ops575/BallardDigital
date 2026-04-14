@@ -86,20 +86,18 @@ function Hero() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-sand-light">
             <Sparkles className="h-4 w-4" />
-            Local SEO consulting backed by results you can verify
+            Local SEO in Salt Lake City
           </div>
 
           <h1 className="mb-6 text-4xl leading-tight font-bold tracking-tight text-hero-fg md:text-6xl md:leading-[1.1]">
-            Your Customers Search
+            Utah SEO that shows you
             <br />
-            Differently Now.{" "}
-            <span className="gradient-text">Your SEO Should&nbsp;Too.</span>
+            <span className="gradient-text">results before you commit.</span>
           </h1>
 
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/50 md:text-xl">
-            We optimize your business for Google, ChatGPT, Perplexity, and every
-            AI-powered search engine — not just traditional blue links.
-            Salt&nbsp;Lake&nbsp;City SEO for the AI&nbsp;era.
+            We audit your online presence, show you exactly where
+            you stand, and only move forward when the results make sense.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -147,44 +145,44 @@ function ProblemSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            The search landscape has fundamentally changed.
+            Right now, someone in your area is searching for what you do.
             <br />
-            <span className="text-muted">Most Utah SEO agencies haven&apos;t.</span>
+            <span className="text-muted">Will they find you?</span>
           </h2>
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl border border-border bg-surface p-8 text-center">
-            <div className="gradient-text mb-4 text-5xl font-bold">60%</div>
+            <div className="gradient-text mb-4 text-5xl font-bold">46%</div>
             <p className="text-muted">
-              of Google searches now end with{" "}
-              <strong className="text-foreground">zero clicks</strong>. Users get answers from AI summaries and never visit a website.
+              of all Google searches have{" "}
+              <strong className="text-foreground">local intent</strong>. People searching for services near them — and choosing from whoever shows up.
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-surface p-8 text-center">
-            <div className="gradient-text mb-4 text-5xl font-bold">50%+</div>
+            <div className="gradient-text mb-4 text-5xl font-bold">78%</div>
             <p className="text-muted">
-              of search results now feature an{" "}
-              <strong className="text-foreground">AI-generated overview</strong>{" "}
-              before any traditional links appear.
+              of local mobile searches result in an{" "}
+              <strong className="text-foreground">offline purchase within 24 hours</strong>.{" "}
+              Visibility isn&apos;t abstract — it&apos;s revenue.
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-surface p-8 text-center">
-            <div className="gradient-text mb-4 text-5xl font-bold">Growing</div>
+            <div className="gradient-text mb-4 text-5xl font-bold">3</div>
             <p className="text-muted">
-              share of customers now ask{" "}
-              <strong className="text-foreground">ChatGPT and Perplexity</strong>{" "}
-              for local business recommendations instead of searching Google.
+              businesses show in Google&apos;s{" "}
+              <strong className="text-foreground">Local Pack</strong>.{" "}
+              If you&apos;re not one of them, your competitors are getting those calls.
             </p>
           </div>
         </div>
 
         <div className="mx-auto mt-12 max-w-2xl">
-          <div className="rounded-2xl border border-red-200 bg-red-50 p-6">
+          <div className="rounded-2xl border border-accent/20 bg-accent-subtle p-6">
             <p className="text-center text-base leading-relaxed text-foreground">
-              <strong className="text-red-700">The hard truth:</strong>{" "}
+              <strong className="text-accent-dark">The opportunity:</strong>{" "}
               <span className="text-muted">
-                If your SEO strategy hasn&apos;t changed since 2023, you&apos;re invisible to a growing share of your customers. They&apos;re asking ChatGPT and Perplexity for recommendations — and if you&apos;re not showing up in those answers, your competitors are.
+                Most Utah businesses have a Google Business Profile and call it done. The ones investing in real local SEO — content, reviews, directories, structured data — are the ones customers find first. And now, AI-powered search is creating a new layer of visibility that almost nobody is optimizing for yet.
               </span>
             </p>
           </div>
@@ -199,14 +197,14 @@ function ProblemSection() {
    ─────────────────────────────────────────── */
 function ComparisonSection() {
   return (
-    <section className="bg-surface-alt py-20 md:py-28">
+    <section className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Traditional SEO alone is no longer enough
+            Not all SEO is created equal
           </h2>
           <p className="text-lg text-muted">
-            See the difference between what most agencies sell and what actually works in 2026.
+            Here&apos;s what to look for — and what to avoid — when choosing an SEO partner.
           </p>
         </div>
 
@@ -216,16 +214,16 @@ function ComparisonSection() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-50">
                 <X className="h-5 w-5 text-red-500" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">What Other Agencies Sell</h3>
+              <h3 className="text-xl font-semibold text-foreground">Common Agency Red Flags</h3>
             </div>
             <ul className="space-y-4 text-muted">
               {[
-                "Optimize for Google page 1 rankings only",
-                "Report on keyword rankings and traffic as success metrics",
-                "Generic service descriptions with no vertical expertise",
+                "Hide pricing behind a sales call",
                 "Lock you into 12-month contracts before proving results",
-                "Hide pricing — force a sales call to learn the cost",
-                "Ignore AI search entirely — no GEO strategy",
+                "Report on keyword rankings instead of leads and revenue",
+                "Own your website, domain, or analytics credentials",
+                "Hand your account to junior staff after the sale",
+                "No clear deliverables — just vague monthly 'optimization'",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <X className="mt-0.5 h-5 w-5 shrink-0 text-red-400" />
@@ -240,16 +238,16 @@ function ComparisonSection() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10">
                 <CheckCircle2 className="h-5 w-5 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">What Ballard Digital Delivers</h3>
+              <h3 className="text-xl font-semibold text-foreground">How Ballard Digital Works</h3>
             </div>
             <ul className="space-y-4 text-muted">
               {[
-                { text: <>Optimize for Google <strong className="text-foreground">AND</strong> AI search (ChatGPT, Perplexity, AI Overviews)</> },
-                { text: <>Report on <strong className="text-foreground">leads, calls, and revenue impact</strong> — not vanity metrics</> },
-                { text: "Deep expertise in home services, dental, real estate, and orthopedics" },
-                { text: "We prove value first — you only continue when the math makes sense" },
                 { text: <><strong className="text-foreground">Transparent pricing</strong> published right on our website</> },
+                { text: "Month-to-month retainers — we earn your business every month" },
+                { text: <>Report on <strong className="text-foreground">leads, calls, and revenue impact</strong> — not vanity metrics</> },
                 { text: "You own everything: domain, content, analytics, credentials" },
+                { text: "The person who sells the work does the work" },
+                { text: "Google SEO today + AI search optimization for tomorrow" },
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
@@ -273,30 +271,24 @@ function HowItWorksSection() {
       step: "01",
       icon: FileSearch,
       title: "Audit",
-      subtitle: "$500 (credited toward your project)",
-      description: "We score your Google profile, website, directories, reviews, and — what nobody else checks — whether your business appears when someone asks ChatGPT or Perplexity for a recommendation in your market. You get a specific findings report with an action plan and ROI projection. No generic templates.",
-      duration: "3-5 business days",
+      description: "We score your Google profile, website, directories, reviews, and AI search visibility. You get a specific findings report with an action plan — not a generic template.",
     },
     {
       step: "02",
       icon: Wrench,
       title: "Build",
-      subtitle: "$3,000 - $6,000 one-time",
-      description: "We fix what the audit found. Directory cleanup, Google Business Profile optimization, entity optimization for AI search, and a custom WordPress website built for local search — with schema markup, lead capture, and the technical foundation for long-term growth.",
-      duration: "2-4 weeks",
+      description: "We fix what the audit found. Directory cleanup, Google Business Profile optimization, structured data, and a website built for local search if you need one.",
     },
     {
       step: "03",
       icon: Rocket,
       title: "Grow",
-      subtitle: "From $1,000/mo — month-to-month",
-      description: "Ongoing content, GEO strategy, Google Business posts, review management, AI search monitoring, and monthly reporting tied to real business metrics. Content compounds. Rankings improve. AI citations grow. The retainer earns its keep every month — or you leave.",
-      duration: "Ongoing",
+      description: "Ongoing content, review management, search monitoring, and monthly reporting tied to leads and calls. You stay because it works — not because of a contract.",
     },
   ];
 
   return (
-    <section id="how-it-works" className="bg-background py-20 md:py-28">
+    <section id="how-it-works" className="bg-surface-alt py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-4 inline-flex items-center gap-2">
@@ -304,10 +296,10 @@ function HowItWorksSection() {
             <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">How it works</span>
           </div>
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Every engagement starts with proof
+            Three phases. Each one earns the next.
           </h2>
           <p className="text-lg text-muted">
-            No phase is sold before the prior one proves its value. The audit creates findings that justify the build. The build creates results that justify the retainer.
+            We don&apos;t sell you a retainer on day one. The audit proves there&apos;s an opportunity. The build captures it. The retainer grows it.
           </p>
         </div>
 
@@ -320,14 +312,17 @@ function HowItWorksSection() {
                   <phase.icon className="h-5 w-5 text-accent" />
                 </div>
               </div>
-              <h3 className="mb-1 text-xl font-semibold text-foreground">{phase.title}</h3>
-              <p className="mb-4 text-sm font-medium text-ridge">{phase.subtitle}</p>
-              <p className="mb-4 text-sm leading-relaxed text-muted">{phase.description}</p>
-              <p className="text-xs text-muted/70">{phase.duration}</p>
+              <h3 className="mb-2 text-xl font-semibold text-foreground">{phase.title}</h3>
+              <p className="text-sm leading-relaxed text-muted">{phase.description}</p>
             </div>
           ))}
         </div>
 
+        <div className="mt-10 text-center">
+          <a href="/pricing" className="inline-flex items-center gap-2 text-sm text-ridge transition-colors hover:text-ridge-dark">
+            See pricing for each phase <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -347,58 +342,45 @@ function GeoSection() {
   ];
 
   return (
-    <section id="geo" className="bg-surface-alt py-20 md:py-28">
+    <section id="geo" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-4 inline-flex items-center gap-2">
             <span className="accent-line" />
-            <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">Our flagship differentiator</span>
+            <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">What sets us apart</span>
           </div>
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Generative Engine Optimization (GEO)
+            We optimize for where search is going — not just where it&apos;s been
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            GEO is the practice of optimizing your business to appear in AI-powered search results. When someone asks ChatGPT &ldquo;who&apos;s the best plumber in Salt Lake City?&rdquo; — GEO is how you become the answer.
+            Google is still the primary way customers find local businesses. We start there. But search is evolving — AI assistants like ChatGPT and Perplexity are increasingly where people ask for recommendations. We make sure you&apos;re visible in both.
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-border bg-surface p-8">
-          <h3 className="mb-6 text-center text-lg font-semibold text-foreground">Traditional SEO vs. GEO</h3>
-          <div className="grid gap-6 sm:grid-cols-2">
-            <div>
-              <h4 className="mb-3 text-[11px] font-bold uppercase tracking-wider text-muted">Traditional SEO</h4>
-              <ul className="space-y-2 text-sm text-muted">
-                {["Optimize for Google's ranking algorithm", "Goal: rank on page 1 of search results", "Keywords, backlinks, technical site health", "Measured by rankings and clicks"].map(t => (
-                  <li key={t} className="flex items-start gap-2"><span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-border" />{t}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-3 text-[11px] font-bold uppercase tracking-wider text-accent">GEO</h4>
-              <ul className="space-y-2 text-sm text-foreground">
-                {["Optimize for LLMs that generate answers", "Goal: get cited in AI-generated answers", "Entity authority, structured data, PR signals", "Measured by AI citation frequency"].map(t => (
-                  <li key={t} className="flex items-start gap-2"><span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />{t}</li>
-                ))}
-              </ul>
-            </div>
+        <div className="mx-auto mt-12 grid max-w-4xl gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border border-border bg-surface p-8">
+            <h3 className="mb-4 text-lg font-semibold text-foreground">Local SEO — the foundation</h3>
+            <p className="mb-4 text-sm leading-relaxed text-muted">The fundamentals that drive leads today: Google Business Profile, local directories, reviews, content, and technical SEO. This is where most of your customers find you right now.</p>
+            <ul className="space-y-2 text-sm text-muted">
+              {["Google Maps & Local Pack visibility", "Directory listings & NAP consistency", "Review strategy & reputation management", "Content that targets local search queries"].map(t => (
+                <li key={t} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-2xl border border-accent/30 bg-accent-subtle p-8">
+            <h3 className="mb-4 text-lg font-semibold text-foreground">AI Search Optimization (GEO)</h3>
+            <p className="mb-4 text-sm leading-relaxed text-muted">A growing number of people ask AI for local recommendations. We optimize your business to appear in those answers — giving you a head start most competitors aren&apos;t thinking about yet.</p>
+            <ul className="space-y-2 text-sm text-foreground">
+              {["Entity optimization & structured data", "AI citation building on trusted sources", "Content structured for AI to parse and cite", "Monthly AI visibility monitoring"].map(t => (
+                <li key={t} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />{t}</li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {steps.map((step) => (
-            <div key={step.title} className="group rounded-2xl border border-border bg-surface p-6 transition-all hover:border-accent/30 hover:shadow-sm">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-accent-subtle transition-colors group-hover:bg-accent/10">
-                <step.icon className="h-6 w-6 text-accent" />
-              </div>
-              <h3 className="mb-2 text-lg font-semibold text-foreground">{step.title}</h3>
-              <p className="text-sm leading-relaxed text-muted">{step.description}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <a href="#audit" className="inline-flex items-center gap-2 text-ridge transition-colors hover:text-ridge-dark">
-            Get your free digital presence score <ArrowRight className="h-4 w-4" />
+        <div className="mt-10 text-center">
+          <a href="/services/ai-search-optimization" className="inline-flex items-center gap-2 text-sm text-ridge transition-colors hover:text-ridge-dark">
+            Learn more about AI search optimization <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </div>
@@ -446,7 +428,7 @@ function IndustriesSection() {
   ];
 
   return (
-    <section className="bg-background py-20 md:py-28">
+    <section className="bg-surface-alt py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
@@ -540,7 +522,7 @@ function PricingSection() {
                 "NAP cleanup across 20+ directories",
                 "Google Business Profile optimization",
                 "Entity optimization for AI search",
-                "Custom WordPress website (5-12 pages)",
+                "Custom website (5-12 pages)",
                 "Schema markup, lead capture, analytics setup",
                 "Review generation system",
                 "30-day post-launch support + training",
@@ -662,24 +644,9 @@ function PricingSection() {
 function WhyBallardSection() {
   const reasons = [
     {
-      icon: Bot,
-      title: "First-mover in AI search",
-      description: "We built GEO into our practice from day one — not bolted onto an old playbook. Other agencies have service pages. We have a unified SEO + AI search strategy.",
-    },
-    {
       icon: Eye,
       title: "Transparent by default",
-      description: "Published pricing. Clear deliverables. Monthly reports tied to revenue, not vanity metrics. No surprises, no hidden fees.",
-    },
-    {
-      icon: Users,
-      title: "Senior-level execution",
-      description: "The person who sells the work does the work. No bait-and-switch to junior staff after you sign.",
-    },
-    {
-      icon: Clock,
-      title: "No contracts",
-      description: "Month-to-month after your initial project. We earn retention through results. If we're not delivering, you should leave.",
+      description: "Published pricing. Clear deliverables. Monthly reports tied to leads and revenue — not keyword rankings. No surprises, no hidden fees.",
     },
     {
       icon: Shield,
@@ -687,14 +654,29 @@ function WhyBallardSection() {
       description: "Your domain, content, analytics, and credentials — registered in your name from day one. If we part ways, it's a clean 14-day handoff. Your site keeps running.",
     },
     {
+      icon: Users,
+      title: "Senior-level execution",
+      description: "The person who sells the work does the work. No bait-and-switch to junior staff after you sign. Fewer clients, deeper relationships, better results.",
+    },
+    {
+      icon: Clock,
+      title: "No long-term contracts",
+      description: "Month-to-month after your initial project. We earn retention through results. If we're not delivering, you should leave.",
+    },
+    {
       icon: Globe,
       title: "Proof you can verify",
       description: "We share real Search Console data and live rankings during every audit. We never say \"trust me.\" We say \"look.\"",
     },
+    {
+      icon: Bot,
+      title: "Built for where search is going",
+      description: "We handle the local SEO fundamentals that drive leads today — and we're already preparing your business for AI-powered search. Most agencies aren't thinking about this yet.",
+    },
   ];
 
   return (
-    <section className="bg-surface-alt py-20 md:py-28">
+    <section className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
@@ -739,13 +721,10 @@ function AuditSection() {
                   <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">Start here</span>
                 </div>
                 <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                  How visible is your business online?
+                  Get your free presence score.
                 </h2>
                 <p className="mb-6 leading-relaxed text-muted">
-                  We&apos;ll score your digital presence across five dimensions — Google search, Google Business Profile, directories and citations, reviews, and AI search visibility. You&apos;ll see exactly where you stand, where the gaps are, and what to fix first.
-                </p>
-                <p className="mb-6 leading-relaxed text-muted">
-                  If the score reveals meaningful opportunities, we&apos;ll follow up with a full competitive audit ($500, credited toward your project) with a specific action plan and ROI projection.
+                  We&apos;ll show you where you stand across Google, directories, reviews, and AI search — and what to fix first.
                 </p>
                 <ul className="space-y-3 text-sm">
                   {[
@@ -884,6 +863,8 @@ function Footer() {
             <ul className="space-y-2 text-sm text-white/35">
               <li><a href="/services/ai-search-optimization" className="transition-colors hover:text-white/60">AI Search Optimization</a></li>
               <li><a href="/services/local-seo" className="transition-colors hover:text-white/60">Local SEO</a></li>
+              <li><a href="/services/google-business-profile" className="transition-colors hover:text-white/60">Google Business Profile</a></li>
+              <li><a href="/services/content-marketing" className="transition-colors hover:text-white/60">Content Marketing</a></li>
               <li><a href="/services/technical-seo" className="transition-colors hover:text-white/60">Technical SEO</a></li>
               <li><a href="/services/web-design" className="transition-colors hover:text-white/60">Web Design</a></li>
               <li><a href="/pricing" className="transition-colors hover:text-white/60">Pricing</a></li>

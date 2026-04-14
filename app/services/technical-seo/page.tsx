@@ -10,7 +10,7 @@ import {
   Zap,
   FileSearch,
 } from "lucide-react";
-import { InnerNavbar, InnerFooter } from "@/lib/components";
+import { InnerNavbar, InnerFooter, FaqSchema } from "@/lib/components";
 
 export const metadata: Metadata = {
   title: "Technical SEO Audits in Utah | Ballard Digital",
@@ -20,9 +20,25 @@ export const metadata: Metadata = {
     "technical seo audit utah, technical seo salt lake city, site speed optimization utah, schema markup, core web vitals",
 };
 
+const faqs = [
+  {
+    q: "How much does a technical SEO audit cost?",
+    a: "Technical SEO is included in our standard $500 audit. For a deep standalone technical audit (pre-migration, large sites), pricing starts at $1,500 depending on site size and complexity.",
+  },
+  {
+    q: "Do I need technical SEO if my site looks fine?",
+    a: "Probably. Most sites that 'look fine' have technical issues invisible to visitors but visible to Google — slow server response, missing schema, broken internal links, redirect chains. Our audit finds them.",
+  },
+  {
+    q: "Will you implement the fixes or just report them?",
+    a: "Both options. For sites we build or manage, we implement everything. For sites managed by your team or another developer, we deliver a prioritized fix list with specific instructions they can follow.",
+  },
+];
+
 export default function TechnicalSeoPage() {
   return (
     <>
+      <FaqSchema items={faqs} />
       <InnerNavbar />
       <main className="pt-24 pb-20">
         {/* Hero */}
@@ -153,20 +169,7 @@ export default function TechnicalSeoPage() {
               Frequently asked questions
             </h2>
             <div className="space-y-6">
-              {[
-                {
-                  q: "How much does a technical SEO audit cost?",
-                  a: "Technical SEO is included in our standard $500 audit. For a deep standalone technical audit (pre-migration, large sites), pricing starts at $1,500 depending on site size and complexity.",
-                },
-                {
-                  q: "Do I need technical SEO if my site looks fine?",
-                  a: "Probably. Most sites that 'look fine' have technical issues invisible to visitors but visible to Google — slow server response, missing schema, broken internal links, redirect chains. Our audit finds them.",
-                },
-                {
-                  q: "Will you implement the fixes or just report them?",
-                  a: "Both options. For sites we build or manage, we implement everything. For sites managed by your team or another developer, we deliver a prioritized fix list with specific instructions they can follow.",
-                },
-              ].map((faq) => (
+              {faqs.map((faq) => (
                 <div key={faq.q} className="border-b border-border pb-6">
                   <h3 className="mb-2 text-base font-semibold text-foreground">
                     {faq.q}

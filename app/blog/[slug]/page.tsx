@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, CheckCircle2, Zap } from "lucide-react";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { InnerNavbar, InnerFooter } from "@/lib/components";
 
@@ -29,7 +29,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  // Simple markdown → HTML (headings, bold, italic, links, lists, tables, paragraphs)
+  // Simple markdown → HTML
   function parseMarkdownTables(md: string): string {
     return md.replace(
       /(^\|.+\|$\n)(^\|[\s:|-]+\|$\n)((?:^\|.+\|$\n?)+)/gm,
@@ -59,6 +59,7 @@ export default async function BlogPostPage({ params }: Props) {
     .replace(/^(?!<[hdula])((?!<).+)$/gm, '<p class="mb-4 leading-relaxed text-muted">$1</p>')
     .replace(/<p class="mb-4 leading-relaxed text-muted"><\/p>/g, "");
 
+  // Schema: Article
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -71,12 +72,35 @@ export default async function BlogPostPage({ params }: Props) {
     mainEntityOfPage: `https://ballarddigital.com/blog/${slug}`,
   };
 
+  // Schema: FAQPage (only if post has FAQs)
+  const faqSchema =
+    post.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <InnerNavbar />
       <main className="pt-24 pb-20">
         <article className="mx-auto max-w-3xl px-6">
@@ -111,6 +135,29 @@ export default async function BlogPostPage({ params }: Props) {
             </p>
           </header>
 
+          {/* Key Takeaways Box */}
+          {post.takeaways.length > 0 && (
+            <div className="mb-10 rounded-2xl border border-accent/30 bg-accent-subtle p-6">
+              <div className="mb-3 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-accent" />
+                <h2 className="text-base font-semibold text-foreground">
+                  Key Takeaways
+                </h2>
+              </div>
+              <ul className="space-y-2">
+                {post.takeaways.map((takeaway) => (
+                  <li
+                    key={takeaway}
+                    className="flex items-start gap-3 text-sm"
+                  >
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                    <span className="text-foreground">{takeaway}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Content */}
           <div
             className="prose-ballard"
@@ -123,7 +170,8 @@ export default async function BlogPostPage({ params }: Props) {
               Want to see where your business stands?
             </h3>
             <p className="mb-6 text-sm text-muted">
-              Get a free digital presence score — see how visible your business is across Google, directories, reviews, and AI search.
+              Get a free digital presence score — see how visible your business
+              is across Google, directories, reviews, and AI search.
             </p>
             <Link
               href="/#audit"
