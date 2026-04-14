@@ -14,9 +14,9 @@ export function InnerNavbar() {
           </span>
         </Link>
         <div className="hidden items-center gap-8 md:flex">
-          <Link href="/#how-it-works" className="text-sm text-muted transition-colors hover:text-foreground">How It Works</Link>
-          <Link href="/#geo" className="text-sm text-muted transition-colors hover:text-foreground">What is GEO?</Link>
-          <Link href="/#pricing" className="text-sm text-muted transition-colors hover:text-foreground">Pricing</Link>
+          <Link href="/services" className="text-sm text-muted transition-colors hover:text-foreground">Services</Link>
+          <Link href="/industries" className="text-sm text-muted transition-colors hover:text-foreground">Industries</Link>
+          <Link href="/pricing" className="text-sm text-muted transition-colors hover:text-foreground">Pricing</Link>
           <Link href="/blog" className="text-sm text-muted transition-colors hover:text-foreground">Blog</Link>
           <Link href="/about" className="text-sm text-muted transition-colors hover:text-foreground">About</Link>
           <Link
@@ -32,9 +32,9 @@ export function InnerNavbar() {
         </a>
       </div>
       <div id="inner-mobile-nav" className="hidden target:flex flex-col gap-4 border-t border-border bg-surface px-6 py-6 md:hidden">
-        <Link href="/#how-it-works" className="text-sm text-muted">How It Works</Link>
-        <Link href="/#geo" className="text-sm text-muted">What is GEO?</Link>
-        <Link href="/#pricing" className="text-sm text-muted">Pricing</Link>
+        <Link href="/services" className="text-sm text-muted">Services</Link>
+        <Link href="/industries" className="text-sm text-muted">Industries</Link>
+        <Link href="/pricing" className="text-sm text-muted">Pricing</Link>
         <Link href="/blog" className="text-sm text-muted">Blog</Link>
         <Link href="/about" className="text-sm text-muted">About</Link>
         <Link href="/#audit" className="inline-flex items-center justify-center gap-2 rounded-lg bg-ridge px-4 py-2.5 text-sm font-medium text-white">
@@ -66,15 +66,13 @@ export function InnerFooter() {
             </div>
           </div>
           <div>
-            <h4 className="mb-4 text-sm font-semibold text-white/60">Services</h4>
+            <h4 className="mb-4 text-sm font-semibold text-white/60"><Link href="/services" className="transition-colors hover:text-white/80">Services</Link></h4>
             <ul className="space-y-2 text-sm text-white/35">
-              <li><Link href="/#how-it-works" className="transition-colors hover:text-white/60">How It Works</Link></li>
-              <li><Link href="/#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</Link></li>
-              <li><Link href="/#pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
-              <li><Link href="/industries/home-services" className="transition-colors hover:text-white/60">Home Services</Link></li>
-              <li><Link href="/industries/dental" className="transition-colors hover:text-white/60">Dental</Link></li>
-              <li><Link href="/industries/real-estate" className="transition-colors hover:text-white/60">Real Estate</Link></li>
-              <li><Link href="/industries/orthopedic" className="transition-colors hover:text-white/60">Orthopedics</Link></li>
+              <li><Link href="/services/ai-search-optimization" className="transition-colors hover:text-white/60">AI Search Optimization</Link></li>
+              <li><Link href="/services/local-seo" className="transition-colors hover:text-white/60">Local SEO</Link></li>
+              <li><Link href="/services/technical-seo" className="transition-colors hover:text-white/60">Technical SEO</Link></li>
+              <li><Link href="/services/web-design" className="transition-colors hover:text-white/60">Web Design</Link></li>
+              <li><Link href="/pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
             </ul>
           </div>
           <div>
@@ -82,6 +80,8 @@ export function InnerFooter() {
             <ul className="space-y-2 text-sm text-white/35">
               <li><Link href="/blog" className="transition-colors hover:text-white/60">Blog</Link></li>
               <li><Link href="/about" className="transition-colors hover:text-white/60">About</Link></li>
+              <li><Link href="/results" className="transition-colors hover:text-white/60">Results</Link></li>
+              <li><Link href="/contact" className="transition-colors hover:text-white/60">Contact</Link></li>
               <li><Link href="/#audit" className="transition-colors hover:text-white/60">Free Score</Link></li>
             </ul>
           </div>

@@ -43,8 +43,9 @@ function Navbar() {
           </span>
         </a>
         <div className="hidden items-center gap-8 md:flex">
-          <a href="#how-it-works" className="text-sm text-muted transition-colors hover:text-foreground">How It Works</a>
-          <a href="#pricing" className="text-sm text-muted transition-colors hover:text-foreground">Pricing</a>
+          <a href="/services" className="text-sm text-muted transition-colors hover:text-foreground">Services</a>
+          <a href="/industries" className="text-sm text-muted transition-colors hover:text-foreground">Industries</a>
+          <a href="/pricing" className="text-sm text-muted transition-colors hover:text-foreground">Pricing</a>
           <a href="/blog" className="text-sm text-muted transition-colors hover:text-foreground">Blog</a>
           <a href="/about" className="text-sm text-muted transition-colors hover:text-foreground">About</a>
           <a
@@ -62,8 +63,9 @@ function Navbar() {
       </div>
       {/* Mobile nav panel */}
       <div id="mobile-nav" className="hidden target:flex flex-col gap-4 border-t border-border bg-surface px-6 py-6 md:hidden">
-        <a href="#how-it-works" className="text-sm text-muted">How It Works</a>
-        <a href="#pricing" className="text-sm text-muted">Pricing</a>
+        <a href="/services" className="text-sm text-muted">Services</a>
+        <a href="/industries" className="text-sm text-muted">Industries</a>
+        <a href="/pricing" className="text-sm text-muted">Pricing</a>
         <a href="/blog" className="text-sm text-muted">Blog</a>
         <a href="/about" className="text-sm text-muted">About</a>
         <a href="#audit" className="inline-flex items-center justify-center gap-2 rounded-lg bg-ridge px-4 py-2.5 text-sm font-medium text-white">
@@ -876,23 +878,23 @@ function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="mb-4 text-sm font-semibold text-white/60">Services</h4>
+            <h4 className="mb-4 text-sm font-semibold text-white/60"><a href="/services" className="transition-colors hover:text-white/80">Services</a></h4>
             <ul className="space-y-2 text-sm text-white/35">
-              <li><a href="#how-it-works" className="transition-colors hover:text-white/60">How It Works</a></li>
-              <li><a href="#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</a></li>
-              <li><a href="#pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
-              <li><a href="/industries/home-services" className="transition-colors hover:text-white/60">Home Services</a></li>
-              <li><a href="/industries/dental" className="transition-colors hover:text-white/60">Dental</a></li>
-              <li><a href="/industries/real-estate" className="transition-colors hover:text-white/60">Real Estate</a></li>
-              <li><a href="/industries/orthopedic" className="transition-colors hover:text-white/60">Orthopedics</a></li>
+              <li><a href="/services/ai-search-optimization" className="transition-colors hover:text-white/60">AI Search Optimization</a></li>
+              <li><a href="/services/local-seo" className="transition-colors hover:text-white/60">Local SEO</a></li>
+              <li><a href="/services/technical-seo" className="transition-colors hover:text-white/60">Technical SEO</a></li>
+              <li><a href="/services/web-design" className="transition-colors hover:text-white/60">Web Design</a></li>
+              <li><a href="/pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
             </ul>
           </div>
           <div>
             <h4 className="mb-4 text-sm font-semibold text-white/60">Company</h4>
             <ul className="space-y-2 text-sm text-white/35">
-              <li><a href="#audit" className="transition-colors hover:text-white/60">Free Score</a></li>
               <li><a href="/blog" className="transition-colors hover:text-white/60">Blog</a></li>
               <li><a href="/about" className="transition-colors hover:text-white/60">About</a></li>
+              <li><a href="/results" className="transition-colors hover:text-white/60">Results</a></li>
+              <li><a href="/contact" className="transition-colors hover:text-white/60">Contact</a></li>
+              <li><a href="#audit" className="transition-colors hover:text-white/60">Free Score</a></li>
             </ul>
           </div>
         </div>

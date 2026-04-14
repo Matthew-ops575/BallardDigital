@@ -28,6 +28,9 @@ export function getAllPosts(): BlogPost[] {
 
   const files = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith(".md"));
 
+  const now = new Date();
+  now.setHours(23, 59, 59, 999);
+
   const posts = files
     .map((filename) => {
       const slug = filename.replace(/\.md$/, "");
@@ -48,6 +51,11 @@ export function getAllPosts(): BlogPost[] {
         readTime,
         content,
       } as BlogPost;
+    })
+    .filter((post) => {
+      // Only show posts with a date on or before today (scheduled publishing)
+      if (!post.date) return true;
+      return new Date(post.date) <= now;
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
