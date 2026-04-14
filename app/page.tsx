@@ -168,11 +168,11 @@ function ProblemSection() {
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-surface p-8 text-center">
-            <div className="gradient-text mb-4 text-5xl font-bold">0</div>
+            <div className="gradient-text mb-4 text-5xl font-bold">Growing</div>
             <p className="text-muted">
-              Utah SEO practices backing up their{" "}
-              <strong className="text-foreground">AI search claims</strong>{" "}
-              with a live, verifiable content property.
+              share of customers now ask{" "}
+              <strong className="text-foreground">ChatGPT and Perplexity</strong>{" "}
+              for local business recommendations instead of searching Google.
             </p>
           </div>
         </div>
@@ -412,6 +412,7 @@ function IndustriesSection() {
     {
       icon: Shield,
       name: "Home Services",
+      slug: "home-services",
       examples: "HVAC, Plumbing, Electrical, Roofing",
       roi: "One furnace install covers 6-12 months of retainer.",
       description: "Emergency-driven search with high close rates. We know how homeowners find and choose service providers.",
@@ -419,6 +420,7 @@ function IndustriesSection() {
     {
       icon: Home,
       name: "Real Estate",
+      slug: "real-estate",
       examples: "Residential Agents, Brokerages, Teams",
       roi: "One additional closing covers 12+ months of retainer.",
       description: "Neighborhood-level content and local authority that puts agents in front of buyers and sellers actively searching their market.",
@@ -426,6 +428,7 @@ function IndustriesSection() {
     {
       icon: Users,
       name: "Dental Practices",
+      slug: "dental",
       examples: "General, Cosmetic, Implants, Orthodontics",
       roi: "One implant patient covers the entire year.",
       description: "71% of patients use online reviews. We optimize for new patient acquisition across search and AI.",
@@ -433,6 +436,7 @@ function IndustriesSection() {
     {
       icon: BarChart3,
       name: "Orthopedics",
+      slug: "orthopedic",
       examples: "Orthopedic Clinics, Sports Medicine, Physical Therapy",
       roi: "One surgical patient covers 12+ months of retainer.",
       description: "Patients search for specialists by condition and location. We put your practice in front of them — on Google and in AI recommendations.",
@@ -453,16 +457,19 @@ function IndustriesSection() {
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2">
           {industries.map((ind) => (
-            <div key={ind.name} className="rounded-2xl border border-border bg-surface p-8">
+            <a key={ind.name} href={`/industries/${ind.slug}`} className="group rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/30">
               <ind.icon className="mb-4 h-8 w-8 text-accent" />
-              <h3 className="mb-1 text-xl font-semibold text-foreground">{ind.name}</h3>
+              <h3 className="mb-1 text-xl font-semibold text-foreground group-hover:text-accent-dark">{ind.name}</h3>
               <p className="mb-3 text-sm text-ridge">{ind.examples}</p>
               <p className="text-sm leading-relaxed text-muted">{ind.description}</p>
               <p className="mt-4 rounded-lg bg-accent-subtle px-4 py-2.5 text-sm font-medium text-accent-dark">
                 <DollarSign className="mr-1 inline h-4 w-4" />
                 {ind.roi}
               </p>
-            </div>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-ridge">
+                Learn more <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </a>
           ))}
         </div>
       </div>
@@ -874,10 +881,10 @@ function Footer() {
               <li><a href="#how-it-works" className="transition-colors hover:text-white/60">How It Works</a></li>
               <li><a href="#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</a></li>
               <li><a href="#pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
-              <li><a href="/industries/home-services" className="transition-colors hover:text-white/60">Home Services SEO</a></li>
-              <li><a href="/industries/dental" className="transition-colors hover:text-white/60">Dental SEO</a></li>
-              <li><a href="/industries/real-estate" className="transition-colors hover:text-white/60">Real Estate SEO</a></li>
-              <li><a href="/industries/orthopedic" className="transition-colors hover:text-white/60">Orthopedic SEO</a></li>
+              <li><a href="/industries/home-services" className="transition-colors hover:text-white/60">Home Services</a></li>
+              <li><a href="/industries/dental" className="transition-colors hover:text-white/60">Dental</a></li>
+              <li><a href="/industries/real-estate" className="transition-colors hover:text-white/60">Real Estate</a></li>
+              <li><a href="/industries/orthopedic" className="transition-colors hover:text-white/60">Orthopedics</a></li>
             </ul>
           </div>
           <div>
@@ -966,12 +973,12 @@ export default function Page() {
       <main>
         <Hero />
         <ProblemSection />
-        <ComparisonSection />
         <HowItWorksSection />
         <GeoSection />
         <IndustriesSection />
-        <PricingSection />
         <WhyBallardSection />
+        <PricingSection />
+        <ComparisonSection />
         <AreasSection />
         <AuditSection />
       </main>
