@@ -244,7 +244,7 @@ function ComparisonSection() {
               {[
                 { text: <>Optimize for Google <strong className="text-foreground">AND</strong> AI search (ChatGPT, Perplexity, AI Overviews)</> },
                 { text: <>Report on <strong className="text-foreground">leads, calls, and revenue impact</strong> — not vanity metrics</> },
-                { text: "Deep expertise in home services, dental, real estate, and legal" },
+                { text: "Deep expertise in home services, dental, real estate, and orthopedics" },
                 { text: "We prove value first — you only continue when the math makes sense" },
                 { text: <><strong className="text-foreground">Transparent pricing</strong> published right on our website</> },
                 { text: "You own everything: domain, content, analytics, credentials" },
@@ -437,10 +437,10 @@ function IndustriesSection() {
     },
     {
       icon: BarChart3,
-      name: "Legal Services",
-      examples: "Personal Injury, Family Law, Criminal Defense",
-      roi: "One case covers years of retainer.",
-      description: "Highest per-lead value in local SEO. We drive the qualified consultations your firm needs to grow.",
+      name: "Orthopedics",
+      examples: "Orthopedic Clinics, Sports Medicine, Physical Therapy",
+      roi: "One surgical patient covers 12+ months of retainer.",
+      description: "Patients search for specialists by condition and location. We put your practice in front of them — on Google and in AI recommendations.",
     },
   ];
 
@@ -857,8 +857,7 @@ function AuditSection() {
                       <option value="home-services">Home Services (HVAC, Plumbing, etc.)</option>
                       <option value="real-estate">Real Estate</option>
                       <option value="dental">Dental Practice</option>
-                      <option value="legal">Legal Services</option>
-                      <option value="medical">Medical / Healthcare</option>
+                      <option value="orthopedics">Orthopedics / Sports Medicine</option>
                       <option value="construction">Construction / Trades</option>
                       <option value="other">Other</option>
                     </select>
@@ -873,6 +872,55 @@ function AuditSection() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ───────────────────────────────────────────
+   AREAS WE SERVE
+   ─────────────────────────────────────────── */
+function AreasSection() {
+  const areas = [
+    { name: "Draper", slug: "draper" },
+    { name: "Sandy", slug: "sandy" },
+    { name: "Lehi", slug: "lehi" },
+    { name: "West Jordan", slug: "west-jordan" },
+    { name: "Provo", slug: "provo" },
+    { name: "Ogden", slug: "ogden" },
+    { name: "Herriman", slug: "herriman" },
+    { name: "Cottonwood Heights", slug: "cottonwood-heights" },
+    { name: "Park City", slug: "park-city" },
+    { name: "Murray", slug: "murray" },
+  ];
+
+  return (
+    <section className="bg-surface-alt py-20 md:py-28">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mb-4 inline-flex items-center gap-2">
+            <span className="accent-line" />
+            <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">Wasatch Front coverage</span>
+          </div>
+          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            Areas we serve
+          </h2>
+          <p className="text-lg text-muted">
+            Local SEO and AI search optimization for businesses across the Wasatch Front — from Ogden to Provo.
+          </p>
+        </div>
+        <div className="mt-12 flex flex-wrap justify-center gap-3">
+          {areas.map((area) => (
+            <a
+              key={area.slug}
+              href={`/areas/${area.slug}`}
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm text-muted transition-colors hover:border-accent/30 hover:text-foreground"
+            >
+              <MapPin className="h-3.5 w-3.5" />
+              {area.name}
+            </a>
+          ))}
         </div>
       </div>
     </section>
@@ -909,6 +957,9 @@ function Footer() {
               <li><a href="#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</a></li>
               <li><a href="#pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
               <li><a href="/industries/home-services-seo" className="transition-colors hover:text-white/60">Home Services SEO</a></li>
+              <li><a href="/industries/dental-seo" className="transition-colors hover:text-white/60">Dental SEO</a></li>
+              <li><a href="/industries/real-estate-seo" className="transition-colors hover:text-white/60">Real Estate SEO</a></li>
+              <li><a href="/industries/orthopedic-seo" className="transition-colors hover:text-white/60">Orthopedic SEO</a></li>
             </ul>
           </div>
           <div>
@@ -920,7 +971,22 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-white/25">
+        <div className="mt-10 border-t border-white/10 pt-8">
+          <h4 className="mb-3 text-sm font-semibold text-white/60">Areas We Serve</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-white/35">
+            <a href="/areas/draper" className="transition-colors hover:text-white/60">Draper</a>
+            <a href="/areas/sandy" className="transition-colors hover:text-white/60">Sandy</a>
+            <a href="/areas/lehi" className="transition-colors hover:text-white/60">Lehi</a>
+            <a href="/areas/west-jordan" className="transition-colors hover:text-white/60">West Jordan</a>
+            <a href="/areas/provo" className="transition-colors hover:text-white/60">Provo</a>
+            <a href="/areas/ogden" className="transition-colors hover:text-white/60">Ogden</a>
+            <a href="/areas/herriman" className="transition-colors hover:text-white/60">Herriman</a>
+            <a href="/areas/cottonwood-heights" className="transition-colors hover:text-white/60">Cottonwood Heights</a>
+            <a href="/areas/park-city" className="transition-colors hover:text-white/60">Park City</a>
+            <a href="/areas/murray" className="transition-colors hover:text-white/60">Murray</a>
+          </div>
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-8 text-center text-xs text-white/25">
           &copy; 2026 Ballard Digital. All rights reserved. Salt Lake City, Utah.
         </div>
       </div>
@@ -931,9 +997,53 @@ function Footer() {
 /* ───────────────────────────────────────────
    PAGE ASSEMBLY — updated section order
    ─────────────────────────────────────────── */
+function LocalBusinessSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://ballarddigital.com/#business",
+    name: "Ballard Digital",
+    description:
+      "Local SEO consulting practice in Salt Lake City combining proven local SEO with Generative Engine Optimization (GEO). Transparent pricing, month-to-month retainers, backed by live proof on TheWasatchGuide.com.",
+    url: "https://ballarddigital.com",
+    email: "hello@ballarddigital.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Salt Lake City",
+      addressRegion: "UT",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 40.7608,
+      longitude: -111.891,
+    },
+    areaServed: {
+      "@type": "State",
+      name: "Utah",
+    },
+    priceRange: "$$$",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+    sameAs: [],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function Page() {
   return (
     <>
+      <LocalBusinessSchema />
       <Navbar />
       <main>
         <Hero />
@@ -945,6 +1055,7 @@ export default function Page() {
         <PricingSection />
         <ProofSection />
         <WhyBallardSection />
+        <AreasSection />
         <AuditSection />
       </main>
       <Footer />

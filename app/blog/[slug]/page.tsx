@@ -59,8 +59,24 @@ export default async function BlogPostPage({ params }: Props) {
     .replace(/^(?!<[hdula])((?!<).+)$/gm, '<p class="mb-4 leading-relaxed text-muted">$1</p>')
     .replace(/<p class="mb-4 leading-relaxed text-muted"><\/p>/g, "");
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    author: { "@type": "Person", name: "Kyle Ballard" },
+    publisher: { "@id": "https://ballarddigital.com/#business" },
+    datePublished: post.date,
+    dateModified: post.date,
+    mainEntityOfPage: `https://ballarddigital.com/blog/${slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <InnerNavbar />
       <main className="pt-24 pb-20">
         <article className="mx-auto max-w-3xl px-6">

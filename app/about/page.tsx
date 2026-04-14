@@ -164,8 +164,8 @@ export default function AboutPage() {
                   detail: "One implant patient covers the year",
                 },
                 {
-                  name: "Legal Services",
-                  detail: "One case covers years of retainer",
+                  name: "Orthopedics",
+                  detail: "One surgical patient covers 12+ months of retainer",
                 },
               ].map((v) => (
                 <div

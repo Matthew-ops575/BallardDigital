@@ -72,6 +72,9 @@ export function InnerFooter() {
               <li><Link href="/#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</Link></li>
               <li><Link href="/#pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
               <li><Link href="/industries/home-services-seo" className="transition-colors hover:text-white/60">Home Services SEO</Link></li>
+              <li><Link href="/industries/dental-seo" className="transition-colors hover:text-white/60">Dental SEO</Link></li>
+              <li><Link href="/industries/real-estate-seo" className="transition-colors hover:text-white/60">Real Estate SEO</Link></li>
+              <li><Link href="/industries/orthopedic-seo" className="transition-colors hover:text-white/60">Orthopedic SEO</Link></li>
             </ul>
           </div>
           <div>
@@ -83,7 +86,22 @@ export function InnerFooter() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-white/25">
+        <div className="mt-10 border-t border-white/10 pt-8">
+          <h4 className="mb-3 text-sm font-semibold text-white/60">Areas We Serve</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-white/35">
+            <Link href="/areas/draper" className="transition-colors hover:text-white/60">Draper</Link>
+            <Link href="/areas/sandy" className="transition-colors hover:text-white/60">Sandy</Link>
+            <Link href="/areas/lehi" className="transition-colors hover:text-white/60">Lehi</Link>
+            <Link href="/areas/west-jordan" className="transition-colors hover:text-white/60">West Jordan</Link>
+            <Link href="/areas/provo" className="transition-colors hover:text-white/60">Provo</Link>
+            <Link href="/areas/ogden" className="transition-colors hover:text-white/60">Ogden</Link>
+            <Link href="/areas/herriman" className="transition-colors hover:text-white/60">Herriman</Link>
+            <Link href="/areas/cottonwood-heights" className="transition-colors hover:text-white/60">Cottonwood Heights</Link>
+            <Link href="/areas/park-city" className="transition-colors hover:text-white/60">Park City</Link>
+            <Link href="/areas/murray" className="transition-colors hover:text-white/60">Murray</Link>
+          </div>
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-8 text-center text-xs text-white/25">
           &copy; 2026 Ballard Digital. All rights reserved. Salt Lake City, Utah.
         </div>
       </div>
