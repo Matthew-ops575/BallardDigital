@@ -1,7 +1,7 @@
 ---
 title: "Local SEO for HVAC Companies in Utah: The Complete Guide"
 description: "How Utah HVAC companies can dominate local search and get more service calls. What actually moves the needle — and what most agencies get wrong."
-date: "2026-04-14"
+date: "2026-04-15"
 category: "industry"
 takeaways:
   - "HVAC is one of the highest-ROI industries for local SEO — one furnace install ($3,000-$8,000) covers months of investment"

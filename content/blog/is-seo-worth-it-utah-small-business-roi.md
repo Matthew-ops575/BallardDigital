@@ -1,7 +1,7 @@
 ---
 title: "Is SEO Worth It for Utah Small Businesses? An ROI Analysis with Real Numbers"
 description: "Should your Utah business invest in SEO? We break down the real math — cost vs. return — for HVAC, dental, real estate, and legal services with Utah-specific data."
-date: "2026-04-15"
+date: "2026-04-14"
 category: "guide"
 takeaways:
   - "For most Utah service businesses, one new customer from SEO pays for 6-12 months of investment — the math is straightforward and verifiable"
