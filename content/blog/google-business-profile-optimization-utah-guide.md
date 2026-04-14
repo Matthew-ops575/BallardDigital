@@ -1,7 +1,7 @@
 ---
 title: "Google Business Profile Optimization: The Complete Utah Guide"
 description: "Your Google Business Profile is the single most important local SEO asset. Here's what separates the profiles that generate leads from the ones that get ignored."
-date: "2026-04-16"
+date: "2026-04-13"
 category: "local-seo"
 takeaways:
   - "Your Google Business Profile drives more local leads than your website — businesses with optimized GBPs get 42% more direction requests and 35% more website clicks"
