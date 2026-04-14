@@ -26,6 +26,7 @@ import {
   Wrench,
   Rocket,
 } from "lucide-react";
+import { FadeIn, StaggerContainer, StaggerItem, AnimatedCounter, ParallaxHero } from "@/lib/animations";
 
 /* ───────────────────────────────────────────
    NAVBAR — added mobile hamburger
@@ -81,58 +82,68 @@ function Navbar() {
    ─────────────────────────────────────────── */
 function Hero() {
   return (
-    <section className="hero-gradient relative overflow-hidden pt-32 pb-20 md:pt-44 md:pb-32">
-      <div className="relative mx-auto max-w-7xl px-6">
+    <ParallaxHero className="pt-32 pb-20 md:pt-44 md:pb-32">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-sand-light">
-            <Sparkles className="h-4 w-4" />
-            Local SEO in Salt Lake City
-          </div>
+          <FadeIn delay={0.1} direction="none">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-sand-light">
+              <Sparkles className="h-4 w-4" />
+              Local SEO in Salt Lake City
+            </div>
+          </FadeIn>
 
-          <h1 className="mb-6 text-4xl leading-tight font-bold tracking-tight text-hero-fg md:text-6xl md:leading-[1.1]">
-            Utah SEO that shows you
-            <br />
-            <span className="gradient-text">results before you commit.</span>
-          </h1>
+          <FadeIn delay={0.2}>
+            <h1 className="mb-6 text-4xl leading-tight font-bold tracking-tight text-hero-fg md:text-6xl md:leading-[1.1]">
+              Utah SEO that shows you
+              <br />
+              <span className="gradient-text">results before you commit.</span>
+            </h1>
+          </FadeIn>
 
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/50 md:text-xl">
-            We audit your online presence, show you exactly where
-            you stand, and only move forward when the results make sense.
-          </p>
+          <FadeIn delay={0.35}>
+            <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/50 md:text-xl">
+              We audit your online presence, show you exactly where
+              you stand, and only move forward when the results make sense.
+            </p>
+          </FadeIn>
 
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="#audit"
-              className="pulse-ring relative inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
-            >
-              Get Your Free Presence Score
-              <ArrowRight className="h-5 w-5" />
-            </a>
-            <a
-              href="#how-it-works"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/12 px-8 py-4 text-base font-medium text-white/70 transition-colors hover:border-white/25 hover:text-white/90"
-            >
-              See How It Works
-            </a>
-          </div>
+          <FadeIn delay={0.5}>
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href="#audit"
+                className="pulse-ring relative inline-flex items-center gap-2 rounded-xl bg-ridge px-8 py-4 text-base font-semibold text-white transition-all hover:bg-ridge-dark glow-ridge"
+              >
+                Get Your Free Presence Score
+                <ArrowRight className="h-5 w-5" />
+              </a>
+              <a
+                href="#how-it-works"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/12 px-8 py-4 text-base font-medium text-white/70 transition-colors hover:border-white/25 hover:text-white/90"
+              >
+                See How It Works
+              </a>
+            </div>
+          </FadeIn>
 
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-white/35">
-            <span className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-accent-light" />
-              No long-term contracts
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-accent-light" />
-              Transparent pricing
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-accent-light" />
-              You own everything we build
-            </span>
-          </div>
+          <FadeIn delay={0.65}>
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-white/35">
+              <span className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-accent-light" />
+                No long-term contracts
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-accent-light" />
+                Transparent pricing
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-accent-light" />
+                You own everything we build
+              </span>
+            </div>
+          </FadeIn>
         </div>
       </div>
-    </section>
+    </ParallaxHero>
   );
 }
 
@@ -143,39 +154,47 @@ function ProblemSection() {
   return (
     <section id="problem" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Right now, someone in your area is searching for what you do.
-            <br />
-            <span className="text-muted">Will they find you?</span>
-          </h2>
-        </div>
+        <FadeIn>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              Right now, someone in your area is searching for what you do.
+              <br />
+              <span className="text-muted">Will they find you?</span>
+            </h2>
+          </div>
+        </FadeIn>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border border-border bg-surface p-8 text-center">
-            <div className="gradient-text mb-4 text-5xl font-bold">46%</div>
-            <p className="text-muted">
-              of all Google searches have{" "}
-              <strong className="text-foreground">local intent</strong>. People searching for services near them — and choosing from whoever shows up.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-border bg-surface p-8 text-center">
-            <div className="gradient-text mb-4 text-5xl font-bold">78%</div>
-            <p className="text-muted">
-              of local mobile searches result in an{" "}
-              <strong className="text-foreground">offline purchase within 24 hours</strong>.{" "}
-              Visibility isn&apos;t abstract — it&apos;s revenue.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-border bg-surface p-8 text-center">
-            <div className="gradient-text mb-4 text-5xl font-bold">3</div>
-            <p className="text-muted">
-              businesses show in Google&apos;s{" "}
-              <strong className="text-foreground">Local Pack</strong>.{" "}
-              If you&apos;re not one of them, your competitors are getting those calls.
-            </p>
-          </div>
-        </div>
+        <StaggerContainer className="mt-16 grid gap-6 md:grid-cols-3">
+          <StaggerItem>
+            <div className="rounded-2xl border border-border bg-surface p-8 text-center">
+              <div className="gradient-text mb-4 text-5xl font-bold"><AnimatedCounter value={46} suffix="%" /></div>
+              <p className="text-muted">
+                of all Google searches have{" "}
+                <strong className="text-foreground">local intent</strong>. People searching for services near them — and choosing from whoever shows up.
+              </p>
+            </div>
+          </StaggerItem>
+          <StaggerItem>
+            <div className="rounded-2xl border border-border bg-surface p-8 text-center">
+              <div className="gradient-text mb-4 text-5xl font-bold"><AnimatedCounter value={78} suffix="%" /></div>
+              <p className="text-muted">
+                of local mobile searches result in an{" "}
+                <strong className="text-foreground">offline purchase within 24 hours</strong>.{" "}
+                Visibility isn&apos;t abstract — it&apos;s revenue.
+              </p>
+            </div>
+          </StaggerItem>
+          <StaggerItem>
+            <div className="rounded-2xl border border-border bg-surface p-8 text-center">
+              <div className="gradient-text mb-4 text-5xl font-bold"><AnimatedCounter value={3} /></div>
+              <p className="text-muted">
+                businesses show in Google&apos;s{" "}
+                <strong className="text-foreground">Local Pack</strong>.{" "}
+                If you&apos;re not one of them, your competitors are getting those calls.
+              </p>
+            </div>
+          </StaggerItem>
+        </StaggerContainer>
 
         <div className="mx-auto mt-12 max-w-2xl">
           <div className="rounded-2xl border border-accent/20 bg-accent-subtle p-6">
@@ -290,22 +309,25 @@ function HowItWorksSection() {
   return (
     <section id="how-it-works" className="bg-surface-alt py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2">
-            <span className="accent-line" />
-            <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">How it works</span>
+        <FadeIn>
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-4 inline-flex items-center gap-2">
+              <span className="accent-line" />
+              <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">How it works</span>
+            </div>
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              Three phases. Each one earns the next.
+            </h2>
+            <p className="text-lg text-muted">
+              We don&apos;t sell you a retainer on day one. The audit proves there&apos;s an opportunity. The build captures it. The retainer grows it.
+            </p>
           </div>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Three phases. Each one earns the next.
-          </h2>
-          <p className="text-lg text-muted">
-            We don&apos;t sell you a retainer on day one. The audit proves there&apos;s an opportunity. The build captures it. The retainer grows it.
-          </p>
-        </div>
+        </FadeIn>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-3">
           {phases.map((phase) => (
-            <div key={phase.step} className="relative rounded-2xl border border-border bg-surface p-8">
+            <StaggerItem key={phase.step}>
+            <div className="relative rounded-2xl border border-border bg-surface p-8">
               <div className="mb-4 flex items-center gap-3">
                 <span className="text-3xl font-bold text-border">{phase.step}</span>
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-subtle">
@@ -315,8 +337,9 @@ function HowItWorksSection() {
               <h3 className="mb-2 text-xl font-semibold text-foreground">{phase.title}</h3>
               <p className="text-sm leading-relaxed text-muted">{phase.description}</p>
             </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
         <div className="mt-10 text-center">
           <a href="/pricing" className="inline-flex items-center gap-2 text-sm text-ridge transition-colors hover:text-ridge-dark">
@@ -344,39 +367,45 @@ function GeoSection() {
   return (
     <section id="geo" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2">
-            <span className="accent-line" />
-            <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">What sets us apart</span>
+        <FadeIn>
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-4 inline-flex items-center gap-2">
+              <span className="accent-line" />
+              <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">What sets us apart</span>
+            </div>
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              We optimize for where search is going — not just where it&apos;s been
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-muted">
+              Google is still the primary way customers find local businesses. We start there. But search is evolving — AI assistants like ChatGPT and Perplexity are increasingly where people ask for recommendations. We make sure you&apos;re visible in both.
+            </p>
           </div>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            We optimize for where search is going — not just where it&apos;s been
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted">
-            Google is still the primary way customers find local businesses. We start there. But search is evolving — AI assistants like ChatGPT and Perplexity are increasingly where people ask for recommendations. We make sure you&apos;re visible in both.
-          </p>
-        </div>
+        </FadeIn>
 
-        <div className="mx-auto mt-12 grid max-w-4xl gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border border-border bg-surface p-8">
-            <h3 className="mb-4 text-lg font-semibold text-foreground">Local SEO — the foundation</h3>
-            <p className="mb-4 text-sm leading-relaxed text-muted">The fundamentals that drive leads today: Google Business Profile, local directories, reviews, content, and technical SEO. This is where most of your customers find you right now.</p>
-            <ul className="space-y-2 text-sm text-muted">
-              {["Google Maps & Local Pack visibility", "Directory listings & NAP consistency", "Review strategy & reputation management", "Content that targets local search queries"].map(t => (
-                <li key={t} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />{t}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="rounded-2xl border border-accent/30 bg-accent-subtle p-8">
-            <h3 className="mb-4 text-lg font-semibold text-foreground">AI Search Optimization (GEO)</h3>
-            <p className="mb-4 text-sm leading-relaxed text-muted">A growing number of people ask AI for local recommendations. We optimize your business to appear in those answers — giving you a head start most competitors aren&apos;t thinking about yet.</p>
-            <ul className="space-y-2 text-sm text-foreground">
-              {["Entity optimization & structured data", "AI citation building on trusted sources", "Content structured for AI to parse and cite", "Monthly AI visibility monitoring"].map(t => (
-                <li key={t} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />{t}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <StaggerContainer className="mx-auto mt-12 grid max-w-4xl gap-6 md:grid-cols-2">
+          <StaggerItem>
+            <div className="rounded-2xl border border-border bg-surface p-8">
+              <h3 className="mb-4 text-lg font-semibold text-foreground">Local SEO — the foundation</h3>
+              <p className="mb-4 text-sm leading-relaxed text-muted">The fundamentals that drive leads today: Google Business Profile, local directories, reviews, content, and technical SEO. This is where most of your customers find you right now.</p>
+              <ul className="space-y-2 text-sm text-muted">
+                {["Google Maps & Local Pack visibility", "Directory listings & NAP consistency", "Review strategy & reputation management", "Content that targets local search queries"].map(t => (
+                  <li key={t} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />{t}</li>
+                ))}
+              </ul>
+            </div>
+          </StaggerItem>
+          <StaggerItem>
+            <div className="rounded-2xl border border-accent/30 bg-accent-subtle p-8">
+              <h3 className="mb-4 text-lg font-semibold text-foreground">AI Search Optimization (GEO)</h3>
+              <p className="mb-4 text-sm leading-relaxed text-muted">A growing number of people ask AI for local recommendations. We optimize your business to appear in those answers — giving you a head start most competitors aren&apos;t thinking about yet.</p>
+              <ul className="space-y-2 text-sm text-foreground">
+                {["Entity optimization & structured data", "AI citation building on trusted sources", "Content structured for AI to parse and cite", "Monthly AI visibility monitoring"].map(t => (
+                  <li key={t} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />{t}</li>
+                ))}
+              </ul>
+            </div>
+          </StaggerItem>
+        </StaggerContainer>
 
         <div className="mt-10 text-center">
           <a href="/services/ai-search-optimization" className="inline-flex items-center gap-2 text-sm text-ridge transition-colors hover:text-ridge-dark">
@@ -430,18 +459,21 @@ function IndustriesSection() {
   return (
     <section className="bg-surface-alt py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            SEO that pays for itself
-          </h2>
-          <p className="text-lg text-muted">
-            We work with local service businesses across Utah. Here are a few industries where we have deep experience — but if you serve local customers, we can help.
-          </p>
-        </div>
+        <FadeIn>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              SEO that pays for itself
+            </h2>
+            <p className="text-lg text-muted">
+              We work with local service businesses across Utah. Here are a few industries where we have deep experience — but if you serve local customers, we can help.
+            </p>
+          </div>
+        </FadeIn>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2">
+        <StaggerContainer className="mt-16 grid gap-6 sm:grid-cols-2">
           {industries.map((ind) => (
-            <a key={ind.name} href={`/industries/${ind.slug}`} className="group rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/30">
+            <StaggerItem key={ind.name}>
+            <a href={`/industries/${ind.slug}`} className="group block rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/30">
               <ind.icon className="mb-4 h-8 w-8 text-accent" />
               <h3 className="mb-1 text-xl font-semibold text-foreground group-hover:text-accent-dark">{ind.name}</h3>
               <p className="mb-3 text-sm text-ridge">{ind.examples}</p>
@@ -454,8 +486,9 @@ function IndustriesSection() {
                 Learn more <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </a>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
@@ -678,18 +711,21 @@ function WhyBallardSection() {
   return (
     <section className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Why Ballard Digital?
-          </h2>
-          <p className="text-lg text-muted">
-            In a market with 100+ agencies saying the same things, here&apos;s what actually makes us different.
-          </p>
-        </div>
+        <FadeIn>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              Why Ballard Digital?
+            </h2>
+            <p className="text-lg text-muted">
+              In a market with 100+ agencies saying the same things, here&apos;s what actually makes us different.
+            </p>
+          </div>
+        </FadeIn>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <StaggerContainer className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason) => (
-            <div key={reason.title} className="flex gap-4">
+            <StaggerItem key={reason.title}>
+            <div className="flex gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-subtle">
                 <reason.icon className="h-6 w-6 text-accent" />
               </div>
@@ -698,8 +734,9 @@ function WhyBallardSection() {
                 <p className="text-sm leading-relaxed text-muted">{reason.description}</p>
               </div>
             </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
