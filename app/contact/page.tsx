@@ -96,7 +96,9 @@ export default function ContactPage() {
 
               {/* Contact Form */}
               <div>
-                <form className="space-y-5">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success" className="space-y-5">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden"><label>Don&apos;t fill this out: <input name="bot-field" /></label></p>
                   <div>
                     <label
                       htmlFor="name"

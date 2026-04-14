@@ -1,0 +1,27 @@
+<!-- Hidden page for Netlify form detection. Netlify's build bot needs plain HTML forms to register them. -->
+<html>
+<head><title>Forms</title></head>
+<body>
+  <form name="free-score" netlify netlify-honeypot="bot-field" hidden>
+    <input name="name" type="text" />
+    <input name="email" type="email" />
+    <input name="website" type="url" />
+    <select name="industry">
+      <option value="">Select your industry</option>
+      <option value="home-services">Home Services</option>
+      <option value="real-estate">Real Estate</option>
+      <option value="dental">Dental Practice</option>
+      <option value="orthopedics">Orthopedics / Sports Medicine</option>
+      <option value="construction">Construction / Trades</option>
+      <option value="other">Other</option>
+    </select>
+  </form>
+
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input name="name" type="text" />
+    <input name="email" type="email" />
+    <input name="business" type="text" />
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>

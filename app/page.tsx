@@ -764,7 +764,9 @@ function AuditSection() {
               </div>
 
               <div className="flex flex-col justify-center bg-accent-subtle p-8 md:p-12">
-                <form className="space-y-4">
+                <form name="free-score" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success" className="space-y-4">
+                  <input type="hidden" name="form-name" value="free-score" />
+                  <p className="hidden"><label>Don&apos;t fill this out: <input name="bot-field" /></label></p>
                   <div>
                     <label htmlFor="name" className="mb-1 block text-sm font-medium text-foreground">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="John Smith" className="w-full rounded-lg border border-border bg-surface px-4 py-3 text-sm text-foreground placeholder:text-muted/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
