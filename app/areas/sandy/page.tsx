@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Sandy, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Sandy, UT",
   description:
     "Local SEO and AI search optimization for Sandy businesses. Get found by customers searching in Sandy, the south valley, and across the Wasatch Front.",
   keywords:
@@ -15,29 +15,29 @@ export default function SandyPage() {
       city="Sandy"
       county="Salt Lake County"
       population="96,000+"
-      headline="Sandy is one of Utah's largest cities. Is your business visible to the people searching here?"
+      headline="Get found in Sandy."
       subhead="We help Sandy businesses get found on Google, in AI-powered search, and everywhere their customers look before making a decision."
       localContext="Sandy is the sixth-largest city in Utah, sitting at the base of the Wasatch Mountains with easy access to both Big and Little Cottonwood Canyons. The city's mix of retail corridors along State Street and 700 East, medical offices near Alta View Hospital, and the growing tech presence around the Sandy Civic Center TRAX station creates a diverse and competitive local search landscape. With a population over 96,000 and strong household incomes, Sandy businesses compete for high-value customers who research online before choosing a provider."
       searchInsight="High search volume for 'near me' queries in south valley"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, roofing, and electrical companies serving Sandy homeowners across the south valley's established neighborhoods.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices competing for new patients in one of Utah's most populated cities — where patient choice is driven by reviews and search visibility.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents and brokerages serving Sandy's diverse housing market — from starter homes to mountain-view properties near the canyons.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic clinics and sports medicine practices near the canyons, serving an active population of skiers, hikers, and athletes.",
         },
       ]}

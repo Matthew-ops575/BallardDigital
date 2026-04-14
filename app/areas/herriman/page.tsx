@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Herriman, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Herriman, UT",
   description:
     "Local SEO and AI search optimization for Herriman businesses. Get found by customers searching in Herriman and the southwest Salt Lake Valley.",
   keywords:
@@ -15,29 +15,29 @@ export default function HerrimanPage() {
       city="Herriman"
       county="Salt Lake County"
       population="55,000+"
-      headline="Herriman has doubled in size in a decade. Are new residents finding your business?"
+      headline="Get found in Herriman."
       subhead="We help Herriman businesses get found on Google, in AI-powered search, and everywhere their customers look — reaching the wave of new homeowners moving to the southwest valley."
       localContext="Herriman is one of the fastest-growing cities in Utah, doubling its population in roughly a decade. New master-planned communities, the growing commercial corridor along Mountain View, and the city's family-oriented demographic create a unique opportunity for local businesses. Thousands of new homeowners are searching for service providers for the first time — dentists, HVAC companies, real estate agents — and they're starting that search online. Most Herriman businesses rely on word-of-mouth, leaving a wide-open gap in search visibility for businesses willing to invest."
       searchInsight="Rapidly growing population actively searching for new providers"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, roofing, and electrical companies serving Herriman's new construction and growing neighborhoods — where homeowners are choosing providers for the first time.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices competing for new families moving to Herriman — a constant stream of patients who are actively searching for a new dentist.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents serving one of Utah's hottest growth markets — where new construction and family relocations drive steady demand.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic and sports medicine practices serving Herriman's young, family-heavy population — youth sports, weekend athletes, and active outdoor lifestyles.",
         },
       ]}

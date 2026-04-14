@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IndustryPage } from "@/lib/industry-page";
 
 export const metadata: Metadata = {
-  title: "HVAC & Home Services SEO in Utah | Ballard Digital",
+  title: "HVAC & Home Services SEO in Utah",
   description:
     "Local SEO and AI search optimization for HVAC, plumbing, electrical, and roofing companies in Utah. One furnace install covers 6-12 months of retainer. Transparent pricing.",
   keywords:

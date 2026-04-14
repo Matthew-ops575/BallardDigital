@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in West Jordan, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in West Jordan, UT",
   description:
     "Local SEO and AI search optimization for West Jordan businesses. Get found by customers searching in West Jordan and across the southwest valley.",
   keywords:
@@ -15,29 +15,29 @@ export default function WestJordanPage() {
       city="West Jordan"
       county="Salt Lake County"
       population="116,000+"
-      headline="West Jordan is Utah's fourth-largest city. Are your customers finding you — or driving past you?"
+      headline="Get found in West Jordan."
       subhead="We help West Jordan businesses get found on Google, in AI-powered search, and everywhere their customers look before choosing a provider."
       localContext="West Jordan is the fourth-largest city in Utah with over 116,000 residents, stretching from the Oquirrh Mountains to the Jordan River. The Bangerter Highway corridor and Redwood Road create major commercial hubs, while established neighborhoods throughout the city provide a large base of homeowners searching for local services. Despite its size, West Jordan is underserved by local SEO — most agencies focus on Salt Lake City proper, leaving a gap for businesses that serve the southwest valley."
       searchInsight="Underserved market — few agencies target West Jordan specifically"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, roofing, and electrical companies serving West Jordan's large base of homeowners — a massive market that most agencies overlook.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices competing for patients across the southwest valley — where population density means high demand but search visibility determines who wins.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents serving West Jordan's mix of affordable family homes and new developments — where buyers actively search neighborhoods before contacting an agent.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic and sports medicine practices serving the southwest valley's family-heavy population — youth sports injuries, joint replacements, and active lifestyle care.",
         },
       ]}

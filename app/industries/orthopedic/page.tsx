@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IndustryPage } from "@/lib/industry-page";
 
 export const metadata: Metadata = {
-  title: "Orthopedic SEO in Utah | Ballard Digital",
+  title: "Orthopedic SEO in Utah",
   description:
     "Local SEO and AI search optimization for orthopedic clinics, sports medicine practices, and physical therapy offices in Utah. Patients search by condition and location — we make sure they find you.",
   keywords:

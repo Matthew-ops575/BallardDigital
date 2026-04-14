@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Provo, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Provo, UT",
   description:
     "Local SEO and AI search optimization for Provo businesses. Get found by customers searching in Provo, BYU area, and across Utah County.",
   keywords:
@@ -15,29 +15,29 @@ export default function ProvoPage() {
       city="Provo"
       county="Utah County"
       population="115,000+"
-      headline="Provo has 115,000 residents and a university that brings 35,000 more. Can they find your business?"
+      headline="Get found in Provo."
       subhead="We help Provo businesses get found on Google, in AI-powered search, and everywhere their customers look — from BYU students to established families in the south end."
       localContext="Provo is the anchor of Utah County — a university town with a thriving tech scene and one of the youngest populations in the country. BYU brings over 35,000 students who search for everything on their phones, while established neighborhoods along the east bench and south Provo house families with strong spending power. The mix of student-focused businesses along University Avenue, professional services downtown, and residential service providers throughout the city creates a uniquely competitive search landscape. Businesses here need to reach both a young, mobile-first audience and an established homeowner base."
       searchInsight="Young, mobile-first population with high search frequency"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, and roofing companies serving Provo homeowners and the surrounding Utah County market — where seasonal demand swings make year-round visibility critical.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices competing for patients in a city with a young population that switches providers frequently — especially students and young families settling down.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents serving Provo's diverse market — from student housing and first-time buyers near BYU to established neighborhoods along the east bench.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic and sports medicine practices serving BYU athletes, recreational sports participants, and an active outdoor community near the Wasatch Range.",
         },
       ]}

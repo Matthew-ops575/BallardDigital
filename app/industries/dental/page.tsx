@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IndustryPage } from "@/lib/industry-page";
 
 export const metadata: Metadata = {
-  title: "Dental SEO in Salt Lake City | Ballard Digital",
+  title: "Dental SEO in Salt Lake City",
   description:
     "Local SEO and AI search optimization for dental practices in Utah. 71% of patients use online reviews. One implant patient covers the entire annual investment.",
   keywords:

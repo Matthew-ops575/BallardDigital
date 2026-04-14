@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Park City, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Park City, UT",
   description:
     "Local SEO and AI search optimization for Park City businesses. Get found by tourists, locals, and relocators searching in Park City and Summit County.",
   keywords:
@@ -15,29 +15,29 @@ export default function ParkCityPage() {
       city="Park City"
       county="Summit County"
       population="8,500+"
-      headline="Millions visit Park City every year. Can they find your business when they search?"
+      headline="Get found in Park City."
       subhead="We help Park City businesses get found on Google, in AI-powered search, and everywhere tourists and locals look before choosing where to spend their money."
       localContext="Park City is a unique market — a small-town population of 8,500 that swells to tens of thousands during ski season, Sundance, and summer tourism. Businesses here compete for both a loyal local base and a massive transient tourist audience that searches on their phones in real time. 'Best restaurant Park City,' 'urgent care near me,' 'property management Park City' — these searches happen thousands of times a day during peak season. The businesses that show up win. The ones that rely on Main Street foot traffic alone are leaving money on the table, especially during shoulder seasons when search-driven discovery matters most."
       searchInsight="Tourism-driven search spikes with high commercial intent"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, and property maintenance companies serving Park City's mix of full-time residents, vacation homes, and rental properties — where seasonal demand creates year-round opportunity.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices serving Park City residents and the growing number of families relocating from the Salt Lake Valley for the mountain lifestyle.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents and brokerages serving Park City's luxury and resort property market — where buyers research extensively online, often from out of state, before visiting.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic and sports medicine practices in Utah's ski country — serving injuries from Deer Valley, Park City Mountain, and the surrounding trail systems year-round.",
         },
       ]}

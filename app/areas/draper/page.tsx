@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Draper, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Draper, UT",
   description:
     "Local SEO and AI search optimization for Draper businesses. Get found by customers searching in Draper, the Point of the Mountain corridor, and across the Wasatch Front.",
   keywords:
@@ -15,24 +15,24 @@ export default function DraperPage() {
       city="Draper"
       county="Salt Lake County"
       population="51,000+"
-      headline="Draper businesses are growing fast. Are your customers finding you — or your competitors?"
+      headline="Get found in Draper."
       subhead="We help Draper businesses dominate local search and AI-powered recommendations. From the Point of the Mountain corridor to SunCrest, we know this market."
       localContext="Draper sits at the south end of Salt Lake County along the Point of the Mountain corridor — one of Utah's fastest-growing tech and business hubs. With the Silicon Slopes tech ecosystem nearby, the mix of established businesses and fast-growing startups creates a competitive local search landscape. Businesses here compete not just with each other but with companies in neighboring Lehi, Sandy, and Riverton. Standing out in local search requires more than a Google Business Profile — it requires a strategy that covers traditional SEO, AI search visibility, and the review signals that drive customer decisions."
       searchInsight="Low competition for 'Draper' + industry keywords"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, roofing, and electrical companies in Draper competing for homeowner searches across the south valley.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices along Draper Parkway and 123rd South competing for new patients searching 'dentist near me' in the south valley.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents and brokerages serving Draper, SunCrest, and the south end of the valley — where median home prices drive high-value client acquisition.",
         },
       ]}

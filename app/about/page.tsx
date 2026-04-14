@@ -15,7 +15,7 @@ import {
 import { InnerNavbar, InnerFooter } from "@/lib/components";
 
 export const metadata: Metadata = {
-  title: "About | Ballard Digital — Local SEO Consulting, Salt Lake City",
+  title: "About — Local SEO Consulting in Salt Lake City",
   description:
     "Ballard Digital is a local SEO consulting practice in Salt Lake City helping high-value businesses get found on Google and in AI search. Founded by Kyle Ballard.",
 };

@@ -71,10 +71,10 @@ export function InnerFooter() {
               <li><Link href="/#how-it-works" className="transition-colors hover:text-white/60">How It Works</Link></li>
               <li><Link href="/#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</Link></li>
               <li><Link href="/#pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
-              <li><Link href="/industries/home-services-seo" className="transition-colors hover:text-white/60">Home Services SEO</Link></li>
-              <li><Link href="/industries/dental-seo" className="transition-colors hover:text-white/60">Dental SEO</Link></li>
-              <li><Link href="/industries/real-estate-seo" className="transition-colors hover:text-white/60">Real Estate SEO</Link></li>
-              <li><Link href="/industries/orthopedic-seo" className="transition-colors hover:text-white/60">Orthopedic SEO</Link></li>
+              <li><Link href="/industries/home-services" className="transition-colors hover:text-white/60">Home Services</Link></li>
+              <li><Link href="/industries/dental" className="transition-colors hover:text-white/60">Dental</Link></li>
+              <li><Link href="/industries/real-estate" className="transition-colors hover:text-white/60">Real Estate</Link></li>
+              <li><Link href="/industries/orthopedic" className="transition-colors hover:text-white/60">Orthopedics</Link></li>
             </ul>
           </div>
           <div>

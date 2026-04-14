@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Ogden, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Ogden, UT",
   description:
     "Local SEO and AI search optimization for Ogden businesses. Get found by customers searching in Ogden, Weber County, and across northern Utah.",
   keywords:
@@ -15,29 +15,29 @@ export default function OgdenPage() {
       city="Ogden"
       county="Weber County"
       population="87,000+"
-      headline="Ogden is booming — new restaurants, new residents, new businesses. Are new customers finding yours?"
+      headline="Get found in Ogden."
       subhead="We help Ogden businesses get found on Google, in AI-powered search, and everywhere their customers look before making a decision."
       localContext="Ogden has undergone a remarkable transformation — from a quiet railroad city to one of Utah's most dynamic markets. The revitalized 25th Street district, growing outdoor recreation economy, and proximity to three major ski resorts have brought new residents and businesses to the area. Weber State University adds a younger demographic, while established neighborhoods in South Ogden and North Ogden house families with strong local spending. The result is a competitive market where businesses need to stand out online — but most Ogden businesses are still underinvesting in search visibility compared to the Salt Lake Valley."
       searchInsight="Growing market with less SEO competition than SLC"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, roofing, and electrical companies serving Ogden and Weber County — where homeowners search locally and competition for SEO is still relatively low.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices competing for patients in Ogden's growing market — where new residents are actively searching for providers after moving to the area.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents serving Ogden's resurgent housing market — from downtown condos to mountain-view properties in the foothills, where buyer interest is surging.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic and sports medicine practices serving Ogden's outdoor recreation community — skiers, mountain bikers, and trail runners from Snowbasin to the Bonneville Shoreline Trail.",
         },
       ]}

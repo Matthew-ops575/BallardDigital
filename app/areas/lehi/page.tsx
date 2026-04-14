@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Lehi, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Lehi, UT",
   description:
     "Local SEO and AI search optimization for Lehi businesses. Get found by customers in the heart of Silicon Slopes and across Utah County.",
   keywords:
@@ -15,29 +15,29 @@ export default function LehiPage() {
       city="Lehi"
       county="Utah County"
       population="75,000+"
-      headline="Lehi is the fastest-growing city on the Wasatch Front. Is your business keeping up online?"
+      headline="Get found in Lehi."
       subhead="We help Lehi businesses dominate local search and AI-powered recommendations in the heart of Silicon Slopes — where competition is fierce and customers research everything online."
       localContext="Lehi sits at the center of Silicon Slopes — Utah's tech corridor — and has been one of the fastest-growing cities in the state for a decade. The Thanksgiving Point area, Traverse Mountain, and the rapid commercial development along SR-92 have transformed Lehi from a small town into a major economic hub. This growth means more businesses competing for the same customers, and a tech-savvy population that searches online before making any purchase decision. Standing out in Lehi requires a search strategy that matches the sophistication of the market."
       searchInsight="Tech-savvy population with high online research rates"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, and roofing companies serving Lehi's rapidly expanding neighborhoods — Traverse Mountain, Holbrook Farms, and the new developments along SR-92.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices competing in a fast-growing market where new residents are actively searching for a new dentist after moving to the area.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents and brokerages serving one of Utah's hottest real estate markets — where new construction and tech-industry relocations drive constant demand.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic and sports medicine practices serving Lehi's young, active population — families, athletes, and outdoor enthusiasts along the Point of the Mountain.",
         },
       ]}

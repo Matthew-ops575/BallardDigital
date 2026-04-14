@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ballarddigital.com"),
   title: {
     default: "Ballard Digital | Utah SEO for the AI Search Era",
-    template: "%s | Ballard Digital",
+    template: "%s",
   },
   description:
     "Salt Lake City SEO consulting combining proven local SEO with Generative Engine Optimization (GEO). Get found on Google, ChatGPT, Perplexity, and AI search. Transparent pricing.",

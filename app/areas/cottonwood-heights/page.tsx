@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CityPage } from "@/lib/city-page";
 
 export const metadata: Metadata = {
-  title: "SEO & AI Search Optimization in Cottonwood Heights, UT | Ballard Digital",
+  title: "SEO & AI Search Optimization in Cottonwood Heights, UT",
   description:
     "Local SEO and AI search optimization for Cottonwood Heights businesses. Get found by customers searching in Cottonwood Heights and the east bench of the Salt Lake Valley.",
   keywords:
@@ -15,29 +15,29 @@ export default function CottonwoodHeightsPage() {
       city="Cottonwood Heights"
       county="Salt Lake County"
       population="34,000+"
-      headline="Cottonwood Heights residents have high expectations — and they search before they choose."
+      headline="Get found in Cottonwood Heights."
       subhead="We help Cottonwood Heights businesses get found on Google, in AI-powered search, and everywhere their customers look before making a decision."
       localContext="Cottonwood Heights sits at the mouth of Big and Little Cottonwood Canyons — gateway to Snowbird, Alta, Brighton, and Solitude. The city's affluent demographic, proximity to world-class recreation, and established neighborhoods make it a high-value market for local businesses. Residents here have strong household incomes, high expectations for service quality, and they thoroughly research providers online before making a decision. Businesses that show up with a strong online presence — reviews, content, search visibility — win. Those that rely on location alone are losing ground to competitors who invest in being found."
       searchInsight="Affluent demographic with thorough online research habits"
       industries={[
         {
           name: "Home Services SEO",
-          slug: "home-services-seo",
+          slug: "home-services",
           description: "HVAC, plumbing, and electrical companies serving Cottonwood Heights' established homes — where homeowners invest in quality and search for the best-reviewed providers.",
         },
         {
           name: "Dental SEO",
-          slug: "dental-seo",
+          slug: "dental",
           description: "Dental practices serving an affluent patient base that values quality and researches providers extensively before booking an appointment.",
         },
         {
           name: "Real Estate SEO",
-          slug: "real-estate-seo",
+          slug: "real-estate",
           description: "Agents serving the east bench market — high-value properties with canyon access, where buyers research neighborhoods in depth before contacting an agent.",
         },
         {
           name: "Orthopedic SEO",
-          slug: "orthopedic-seo",
+          slug: "orthopedic",
           description: "Orthopedic and sports medicine practices at the gateway to Utah's best skiing — serving skiers, snowboarders, hikers, and climbers year-round.",
         },
       ]}

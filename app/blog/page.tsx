@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/blog";
 import { InnerNavbar, InnerFooter } from "@/lib/components";
 
 export const metadata: Metadata = {
-  title: "Blog | Ballard Digital — Utah SEO & AI Search Insights",
+  title: "Utah SEO & AI Search Insights Blog",
   description:
     "Insights on local SEO, Generative Engine Optimization (GEO), and AI search strategy for Utah businesses. Practical guides, industry analysis, and case studies.",
 };

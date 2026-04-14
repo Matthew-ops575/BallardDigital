@@ -326,11 +326,6 @@ function HowItWorksSection() {
           ))}
         </div>
 
-        <div className="mt-8 text-center">
-          <p className="text-sm text-muted">
-            Google Ads management available as an add-on: $500-$1,500/mo based on ad spend.
-          </p>
-        </div>
       </div>
     </section>
   );
@@ -449,10 +444,10 @@ function IndustriesSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Built for industries where the math is obvious
+            SEO that pays for itself
           </h2>
           <p className="text-lg text-muted">
-            We focus on businesses where a single new customer from improved visibility pays for the entire annual investment.
+            We work with local service businesses across Utah. Here are a few industries where we have deep experience — but if you serve local customers, we can help.
           </p>
         </div>
 
@@ -653,83 +648,6 @@ function PricingSection() {
 }
 
 /* ───────────────────────────────────────────
-   PROOF SECTION — NEW: The Wasatch Guide
-   ─────────────────────────────────────────── */
-function ProofSection() {
-  return (
-    <section className="bg-background py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-4xl">
-          <div className="rounded-3xl border border-border bg-surface overflow-hidden">
-            <div className="grid md:grid-cols-2">
-              {/* Left — the pitch */}
-              <div className="p-8 md:p-12 flex flex-col justify-center">
-                <div className="mb-4 inline-flex items-center gap-2">
-                  <span className="accent-line" />
-                  <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-ridge">Proof, not promises</span>
-                </div>
-                <h2 className="mb-4 text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-                  We don&apos;t show other clients&apos; results. We show our own.
-                </h2>
-                <p className="mb-6 text-sm leading-relaxed text-muted">
-                  TheWasatchGuide.com is our independent local content property — neighborhood guides, community resources, and local business content ranking in Google right now. When we pitch you, we show real Search Console data on content we wrote about <em>your</em> market. Not screenshots from someone else&apos;s project.
-                </p>
-                <ul className="mb-6 space-y-2.5 text-sm">
-                  {[
-                    "Real rankings you can verify in Google yourself",
-                    "Content written about your specific market and neighborhoods",
-                    "Search Console data we open on screen during your audit",
-                  ].map(item => (
-                    <li key={item} className="flex items-start gap-3">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                      <span className="text-muted">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="https://thewasatchguide.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-ridge transition-colors hover:text-ridge-dark"
-                >
-                  Visit TheWasatchGuide.com
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-              </div>
-
-              {/* Right — visual representation */}
-              <div className="hero-gradient relative flex flex-col items-center justify-center p-8 md:p-12">
-                <div className="w-full max-w-[280px] rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
-                  <div className="mb-3 flex items-center gap-2">
-                    <div className="flex h-7 w-7 items-center justify-center rounded bg-accent text-xs font-bold text-white">W</div>
-                    <span className="text-sm font-semibold text-white">The Wasatch <span className="font-normal text-white/60">Guide</span></span>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="rounded-lg bg-white/5 p-3">
-                      <p className="text-[10px] uppercase tracking-wider text-white/30 mb-1">Impressions (30d)</p>
-                      <p className="text-xl font-bold text-white">Live Data</p>
-                    </div>
-                    <div className="rounded-lg bg-white/5 p-3">
-                      <p className="text-[10px] uppercase tracking-wider text-white/30 mb-1">Ranking Keywords</p>
-                      <p className="text-xl font-bold text-white">Your Market</p>
-                    </div>
-                    <div className="rounded-lg bg-white/5 p-3">
-                      <p className="text-[10px] uppercase tracking-wider text-white/30 mb-1">Verified In</p>
-                      <p className="text-xl font-bold text-accent-light">Google Search Console</p>
-                    </div>
-                  </div>
-                </div>
-                <p className="mt-4 text-center text-xs text-white/30">We share this data live during every audit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ───────────────────────────────────────────
    WHY BALLARD — expanded with ownership + proof
    ─────────────────────────────────────────── */
 function WhyBallardSection() {
@@ -737,7 +655,7 @@ function WhyBallardSection() {
     {
       icon: Bot,
       title: "First-mover in AI search",
-      description: "We pair GEO with live proof — TheWasatchGuide.com ranks content about your market right now. Other agencies have service pages. We have Search Console data.",
+      description: "We built GEO into our practice from day one — not bolted onto an old playbook. Other agencies have service pages. We have a unified SEO + AI search strategy.",
     },
     {
       icon: Eye,
@@ -762,7 +680,7 @@ function WhyBallardSection() {
     {
       icon: Globe,
       title: "Proof you can verify",
-      description: "TheWasatchGuide.com is our live portfolio — real content, real rankings, real Search Console data about your market. We never say \"trust me.\" We say \"look.\"",
+      description: "We share real Search Console data and live rankings during every audit. We never say \"trust me.\" We say \"look.\"",
     },
   ];
 
@@ -956,10 +874,10 @@ function Footer() {
               <li><a href="#how-it-works" className="transition-colors hover:text-white/60">How It Works</a></li>
               <li><a href="#geo" className="transition-colors hover:text-white/60">AI Search Optimization (GEO)</a></li>
               <li><a href="#pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
-              <li><a href="/industries/home-services-seo" className="transition-colors hover:text-white/60">Home Services SEO</a></li>
-              <li><a href="/industries/dental-seo" className="transition-colors hover:text-white/60">Dental SEO</a></li>
-              <li><a href="/industries/real-estate-seo" className="transition-colors hover:text-white/60">Real Estate SEO</a></li>
-              <li><a href="/industries/orthopedic-seo" className="transition-colors hover:text-white/60">Orthopedic SEO</a></li>
+              <li><a href="/industries/home-services" className="transition-colors hover:text-white/60">Home Services SEO</a></li>
+              <li><a href="/industries/dental" className="transition-colors hover:text-white/60">Dental SEO</a></li>
+              <li><a href="/industries/real-estate" className="transition-colors hover:text-white/60">Real Estate SEO</a></li>
+              <li><a href="/industries/orthopedic" className="transition-colors hover:text-white/60">Orthopedic SEO</a></li>
             </ul>
           </div>
           <div>
@@ -1004,7 +922,7 @@ function LocalBusinessSchema() {
     "@id": "https://ballarddigital.com/#business",
     name: "Ballard Digital",
     description:
-      "Local SEO consulting practice in Salt Lake City combining proven local SEO with Generative Engine Optimization (GEO). Transparent pricing, month-to-month retainers, backed by live proof on TheWasatchGuide.com.",
+      "Local SEO consulting practice in Salt Lake City combining proven local SEO with Generative Engine Optimization (GEO). Transparent pricing, month-to-month retainers.",
     url: "https://ballarddigital.com",
     email: "hello@ballarddigital.com",
     address: {
@@ -1053,7 +971,6 @@ export default function Page() {
         <GeoSection />
         <IndustriesSection />
         <PricingSection />
-        <ProofSection />
         <WhyBallardSection />
         <AreasSection />
         <AuditSection />

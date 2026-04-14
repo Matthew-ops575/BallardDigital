@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IndustryPage } from "@/lib/industry-page";
 
 export const metadata: Metadata = {
-  title: "Real Estate SEO in Utah | Ballard Digital",
+  title: "Real Estate SEO in Utah",
   description:
     "Local SEO and AI search optimization for Utah real estate agents. Neighborhood-level content that puts you in front of buyers and sellers actively searching your market.",
   keywords:
