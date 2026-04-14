@@ -95,16 +95,16 @@ export function IndustryPage({
         {/* ROI Math */}
         <section className="bg-background px-6 py-16">
           <div className="mx-auto max-w-4xl">
-            <div className="rounded-2xl border border-accent/30 bg-accent-subtle p-8 md:p-10">
-              <div className="grid gap-6 md:grid-cols-[auto_1fr] md:items-center">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-accent/10">
-                  <DollarSign className="h-8 w-8 text-accent" />
+            <div className="rounded-2xl border border-border bg-surface p-6 md:p-8">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-subtle">
+                  <DollarSign className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <p className="mb-2 text-2xl font-bold text-foreground md:text-3xl">
+                  <p className="mb-1 text-base font-semibold text-foreground">
                     {roiStat}
                   </p>
-                  <p className="text-base leading-relaxed text-muted">
+                  <p className="text-sm leading-relaxed text-muted">
                     {roiExplanation}
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export function IndustryPage({
                   key={pp.problem}
                   className="rounded-2xl border border-border bg-surface p-6"
                 >
-                  <p className="mb-3 text-sm font-semibold text-red-700">
+                  <p className="mb-3 text-sm font-semibold text-ridge-dark">
                     {pp.problem}
                   </p>
                   <p className="text-sm leading-relaxed text-muted">

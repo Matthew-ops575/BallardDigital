@@ -60,9 +60,6 @@ export function InnerFooter() {
             </p>
             <div className="flex flex-col gap-2 text-sm text-white/40">
               <span className="flex items-center gap-2"><MapPin className="h-4 w-4" />Salt Lake City, Utah</span>
-              <a href="mailto:hello@ballarddigital.com" className="flex items-center gap-2 transition-colors hover:text-white/70">
-                <Mail className="h-4 w-4" />hello@ballarddigital.com
-              </a>
             </div>
           </div>
           <div>
@@ -74,7 +71,6 @@ export function InnerFooter() {
               <li><Link href="/services/content-marketing" className="transition-colors hover:text-white/60">Content Marketing</Link></li>
               <li><Link href="/services/technical-seo" className="transition-colors hover:text-white/60">Technical SEO</Link></li>
               <li><Link href="/services/web-design" className="transition-colors hover:text-white/60">Web Design</Link></li>
-              <li><Link href="/pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
             </ul>
           </div>
           <div>
@@ -84,6 +80,7 @@ export function InnerFooter() {
               <li><Link href="/about" className="transition-colors hover:text-white/60">About</Link></li>
               <li><Link href="/results" className="transition-colors hover:text-white/60">Results</Link></li>
               <li><Link href="/contact" className="transition-colors hover:text-white/60">Contact</Link></li>
+              <li><Link href="/pricing" className="transition-colors hover:text-white/60">Pricing</Link></li>
               <li><Link href="/#audit" className="transition-colors hover:text-white/60">Free Score</Link></li>
             </ul>
           </div>

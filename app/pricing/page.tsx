@@ -293,9 +293,10 @@ export default function PricingPage() {
             <h2 className="mb-4 text-2xl font-bold tracking-tight text-foreground">
               Ready to get started?
             </h2>
-            <p className="mb-8 text-muted">
-              Every engagement starts with a $500 audit — credited toward your
-              project. No commitment beyond that.
+            <p className="mb-6 text-muted">
+              Start with a free presence score to see where you stand. No
+              commitment, no payment — just a clear picture of your
+              visibility.
             </p>
             <Link
               href="/#audit"
@@ -304,6 +305,16 @@ export default function PricingPage() {
               Get My Free Presence Score
               <ArrowRight className="h-5 w-5" />
             </Link>
+            <p className="mt-6 text-sm text-muted">
+              Need something custom?{" "}
+              <Link
+                href="/contact"
+                className="text-ridge underline hover:text-ridge-dark"
+              >
+                Contact us
+              </Link>{" "}
+              to talk through your situation.
+            </p>
           </div>
         </section>
       </main>

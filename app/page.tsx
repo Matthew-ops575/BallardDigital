@@ -211,8 +211,8 @@ function ComparisonSection() {
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
           <div className="rounded-2xl border border-border bg-surface p-8">
             <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-50">
-                <X className="h-5 w-5 text-red-500" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-ridge/10">
+                <X className="h-5 w-5 text-ridge" />
               </div>
               <h3 className="text-xl font-semibold text-foreground">Common Agency Red Flags</h3>
             </div>
@@ -226,7 +226,7 @@ function ComparisonSection() {
                 "No clear deliverables — just vague monthly 'optimization'",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <X className="mt-0.5 h-5 w-5 shrink-0 text-red-400" />
+                  <X className="mt-0.5 h-5 w-5 shrink-0 text-ridge/70" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -853,9 +853,6 @@ function Footer() {
             </p>
             <div className="flex flex-col gap-2 text-sm text-white/40">
               <span className="flex items-center gap-2"><MapPin className="h-4 w-4" />Salt Lake City, Utah</span>
-              <a href="mailto:hello@ballarddigital.com" className="flex items-center gap-2 transition-colors hover:text-white/70">
-                <Mail className="h-4 w-4" />hello@ballarddigital.com
-              </a>
             </div>
           </div>
           <div>
@@ -867,7 +864,6 @@ function Footer() {
               <li><a href="/services/content-marketing" className="transition-colors hover:text-white/60">Content Marketing</a></li>
               <li><a href="/services/technical-seo" className="transition-colors hover:text-white/60">Technical SEO</a></li>
               <li><a href="/services/web-design" className="transition-colors hover:text-white/60">Web Design</a></li>
-              <li><a href="/pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
             </ul>
           </div>
           <div>
@@ -876,6 +872,7 @@ function Footer() {
               <li><a href="/blog" className="transition-colors hover:text-white/60">Blog</a></li>
               <li><a href="/about" className="transition-colors hover:text-white/60">About</a></li>
               <li><a href="/results" className="transition-colors hover:text-white/60">Results</a></li>
+              <li><a href="/pricing" className="transition-colors hover:text-white/60">Pricing</a></li>
               <li><a href="/contact" className="transition-colors hover:text-white/60">Contact</a></li>
               <li><a href="#audit" className="transition-colors hover:text-white/60">Free Score</a></li>
             </ul>

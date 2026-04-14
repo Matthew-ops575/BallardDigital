@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: Props) {
     "@type": "Article",
     headline: post.title,
     description: post.description,
-    author: { "@type": "Person", name: "Kyle Ballard" },
+    author: { "@type": "Person", name: "Matthew Ballard" },
     publisher: { "@id": "https://ballarddigital.com/#business" },
     datePublished: post.date,
     dateModified: post.date,
